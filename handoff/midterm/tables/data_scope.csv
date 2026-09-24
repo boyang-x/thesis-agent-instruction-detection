@@ -1,0 +1,9 @@
+cohort,domain,N,N_unsafe,N_safe,task_groups,mandatory_overflow,fit_rows,run_id,source_path
+source_train,slack+workspace,657,207,450,32,104,553,2026-09-24-round2-native-collaboration,runs/2026-09-24-round2-native-collaboration/data_manifest.json; window_summary.json
+source_dev,slack+workspace,158,46,112,7,27,131,2026-09-24-round2-native-collaboration,runs/2026-09-24-round2-native-collaboration/data_manifest.json; window_summary.json
+source_test,slack+workspace,141,51,90,7,23,118,2026-09-24-round2-native-collaboration,runs/2026-09-24-round2-native-collaboration/data_manifest.json; window_summary.json
+old_test_800,combined,96,35,61,7,14,82,2026-09-24-scheme-selection-closeout,runs/2026-09-24-scheme-selection-closeout/analysis_index.jsonl
+transfer_2048,combined,264,48,216,12,18,246,2026-09-24-scheme-selection-closeout,runs/2026-09-24-scheme-selection-closeout/analysis_index.jsonl
+transfer_2048,banking,87,28,59,6,0,87,2026-09-24-scheme-selection-closeout,runs/2026-09-24-scheme-selection-closeout/analysis_index.jsonl
+transfer_2048,travel,177,20,157,6,18,159,2026-09-24-scheme-selection-closeout,runs/2026-09-24-scheme-selection-closeout/analysis_index.jsonl
+fixed64_new2048,banking32+travel32,64,17,47,12,0,64,2026-09-24-round4-safety-completion,runs/2026-09-24-round4-safety-completion/reasoning_information_2x2.csv; information_selection.json

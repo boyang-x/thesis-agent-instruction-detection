@@ -4,6 +4,8 @@
 
 **审阅入口：[GPT_PRO_REVIEW.md](GPT_PRO_REVIEW.md)**
 
+**中期材料交接：[START_HERE.md](handoff/midterm/START_HERE.md)**。四份正文、13份CSV供新会话结合用户模板写作；实验来源截止`614b4d4`，交接整理不新增实验或最终文稿。
+
 - [当前进度](CURRENT_STATUS.md)
 - [全部实验记录](EXPERIMENTS.md)
 - [毕设任务书](Codex_毕设实施与实验任务书.md)

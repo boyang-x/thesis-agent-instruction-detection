@@ -1,0 +1,5 @@
+model,run_id,seed,view,train_rows,dev_fit_rows,epochs,best_epoch,training_steps,lr,batch_size,dev_best_macro_F1,threshold_dev_reference,cascade_threshold,seconds,source_path
+E_field_seed42,2026-09-24-round2-native-collaboration,42,field,553,131,8,5,280,2e-05,16,0.9465785824973494,0.15,0.5,99.63569474220276,runs/2026-09-24-round2-native-collaboration/training/E_field_seed42/status.json
+E_field_seed43,2026-09-24-round2-native-collaboration,43,field,553,131,8,5,280,2e-05,16,0.957741935483871,0.8,0.5,97.12249541282654,runs/2026-09-24-round2-native-collaboration/training/E_field_seed43/status.json
+E_field_seed44,2026-09-24-round2-native-collaboration,44,field,553,131,8,5,280,2e-05,16,0.9465785824973494,0.5,0.5,97.22995185852051,runs/2026-09-24-round2-native-collaboration/training/E_field_seed44/status.json
+E_head_seed42,2026-09-24-round2-native-collaboration,42,head,553,131,8,1,280,2e-05,16,0.7237797735259665,0.6,0.5,94.038738489151,runs/2026-09-24-round2-native-collaboration/training/E_head_seed42/status.json
