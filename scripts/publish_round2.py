@@ -24,7 +24,7 @@ def export(source,run_id):
     cfg=json.loads((source/'config.json').read_text(encoding='utf-8'))
     assert run_id==cfg['run_id']=='2026-09-24-round2-native-collaboration'
     dest=ROOT/'runs'/run_id;dest.mkdir(parents=True,exist_ok=True)
-    for name in FILES+['calibration_recovery.json']:safe_copy(source/name,dest/name)
+    for name in FILES+['calibration_recovery.json','live_router_predictions.jsonl']:safe_copy(source/name,dest/name)
     for name in ('sample_index.jsonl','duplicates.jsonl','exclusions.jsonl'):safe_copy(source/name,dest/name)
     rows=readl(source/'predictions.jsonl');published=[public_prediction(r) for r in rows]
     for a,b in zip(rows,published):assert {k:v for k,v in a.items() if k!='analysis'}=={k:v for k,v in b.items() if k!='analysis'}

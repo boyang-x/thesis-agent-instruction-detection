@@ -24,7 +24,8 @@ def scrub(text):
     text = re.sub(r"/home/[A-Za-z0-9_.-]+/[^\s\"`<>]+", "REMOTE_PATH_REDACTED", text)
     text = re.sub(r"\b(?:10\.(?:\d{1,3}\.){2}\d{1,3}|192\.168\.\d{1,3}\.\d{1,3})\b", "INTERNAL_IP_REDACTED", text)
     text = re.sub(r"\b[a-zA-Z0-9_.-]*qianxin-inc\.cn\b", "INTERNAL_HOST_REDACTED", text)
-    text = re.sub(r"\bserver-[abc]\b", "EXISTING_COMPUTE_HOST", text)
+    for alias in ('server-a','server-b','server-c'):
+        text = text.replace(alias, "EXISTING_COMPUTE_HOST")
     return text
 
 
