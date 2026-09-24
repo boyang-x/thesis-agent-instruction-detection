@@ -10,7 +10,13 @@
 - [GPT Pro反馈与采纳记录](reviews/README.md)
 - [每轮结果同步约定](AGENTS.md)
 
-## 第二轮补跑收尾
+## 第三轮：机制消融与新增领域迁移
+
+[第三轮结果](runs/2026-09-24-round3-transfer-ablation/RUN_STATUS.md)：旧test96缓存消融、banking/travel共264条的冻结三种子迁移、64条同信息对照均完成。新增592次API；新域主门控直接臂正确236/249/252（N=264），实际调用50/73/69次，均优于仅溢出和对应20次随机送审均值。全量关系臂249/264略高于直接247/264，但主门控关系臂三种子均少于直接臂，不能宣称统一关系收益。
+
+**网页端生成报告/PPT请读取[GPT_PRO_HANDOFF.md](runs/2026-09-24-round3-transfer-ablation/GPT_PRO_HANDOFF.md)**，结合完整CSV与8例。按用户最新要求，本地不生成中期报告/PPT；所有人工审阅仍pending。本轮结束。
+
+## 第二轮补跑收尾（历史）
 
 [冻结HTTP402补跑](runs/2026-09-24-round2-http402-resume/RUN_STATUS.md)：只补185个原失败臂，复用71个成功响应；未重训或改数据/提示/门控。新增190次请求，4个原预选案例的真实串联路径已验证。test两臂均正确93/96，关系臂纠正1个错误、引入1个错误，另有1个输出截断技术暂缓。九组同门控没有总正确数增益，完整种子/预算与成本均保留。[中期回填](runs/2026-09-24-round2-http402-resume/midterm_results_insert.md)。本阶段到此结束，不追加新算法轮次。
 
@@ -30,9 +36,10 @@
 python scripts/verify_run.py runs/2026-09-24-p0-b234
 python scripts/verify_run.py runs/2026-09-24-round2-native-collaboration
 python scripts/verify_run.py runs/2026-09-24-round2-http402-resume
+python scripts/verify_run.py runs/2026-09-24-round3-transfer-ablation
 ```
 
-仅使用Python标准库，从公开逐样本预测重算指标。第一轮核查42组，第二轮核查77组并验证9组同门控及128组同输入。原生输入通过上游commit、文件及行号定位；第一轮自建诊断输入随包提供。
+仅使用Python标准库，从公开逐样本预测重算指标。第一轮核查42组，第二轮核查77组并验证9组同门控及128组同输入。第三轮核查2224条原始预测、1602行表格及792个路由配置，随机送审按领域匹配实际调用数。原生输入通过上游commit、文件及行号定位；第一轮自建诊断输入随包提供。
 
 ## 后续同步方式
 

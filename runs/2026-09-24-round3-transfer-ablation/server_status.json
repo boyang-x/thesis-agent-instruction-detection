@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETED",
+  "seconds": 15.942111015319824,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "peak_memory_bytes": 1834362368,
+  "new_training_steps": 0,
+  "rows": 264,
+  "fit": 246,
+  "overflow": 18
+}

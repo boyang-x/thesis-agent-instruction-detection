@@ -1,15 +1,27 @@
-# 当前状态
+# 第三轮运行状态
 
-论文题目：**基于语义表征与思维链推理协同的智能体恶意指令检测方法**。
+论文：**基于语义表征与思维链推理协同的智能体恶意指令检测方法**
 
-第二轮补跑 `2026-09-24-round2-http402-resume`，冻结父提交 `732834f3f07e508455a108128231a0aba91a5152`。**COMPLETED_WITH_TECHNICAL_ABSTENTION_STAGE_CLOSED，本阶段结束，不追加新算法轮次。**
+run-id：2026-09-24-round3-transfer-ablation。**COMPLETED；本轮结束，不追加算法。**
 
-- 185个原HTTP402臂已补跑185；71个原生成功响应全部复用，包括错误响应，未把正常abstain重新请求。
-- 配对dev/test有效数量：{'dev': 32, 'test': 95}。全部256个臂的故障、模型abstain、输入溢出保留总分母。
-- test关系臂相对直接臂：纠正1个二分类错误，引入1个；转换至abstain另列。不能用单一covered指标声称收益。
-- 两臂test均正确93/96；关系臂新增一条800-token输出截断技术暂缓，主动语义abstain为0。九组同门控中关系臂正确数6组减少、3组相同，没有关系协议优势证据；协同相对E的主要收益是恢复14条输入溢出中的判断。
-- 三种子/三预算的原门控不变，完整纠错、改错、未送审错误与输入溢出恢复判断见表；原生基线未重训。
-- 新增190/200次请求，按高峰价格保守估算0.977260/10元；输入356927、输出44529token，输入缓存命中47360、未命中309567token。实际账单金额未知。
-- 原4个预选案例router：COMPLETED。训练GPU时间0，只有短时原检查点推理；人审仍0，P3/RL/GUI/完整ShieldAgent未运行。
+- 旧test96缓存消融完成：S_fit82、溢出14；三种子、三预算、每组20个固定随机路由重复，新API 0。
+- 新域264条：banking87/6组，travel177/6组；训练任务/完整输入重叠0，E可处理246、溢出18。原三检查点只推理。TF-IDF无已保存可加载产物，迁移NOT_RUN。
+- 主实验直接/关系各264条；新2048与旧800分表。预选64条同信息直接短输入对照完成。
+- 新增API 592；输入1011372、输出126999，缓存命中145408、未命中865964 token。HTTP错误0；实付账单未知。GPU推理15.94秒，训练0步。
 
-[运行报告](runs/2026-09-24-round2-http402-resume/RUN_STATUS.md) · [配对与协同表](runs/2026-09-24-round2-http402-resume/reasoning_collaboration.csv) · [原生基线](runs/2026-09-24-round2-http402-resume/native_baselines.csv) · [原始及衍生预测](runs/2026-09-24-round2-http402-resume/predictions.jsonl) · [响应关联](runs/2026-09-24-round2-http402-resume/response_lineage.jsonl) · [案例](runs/2026-09-24-round2-http402-resume/cases.md) · [中期回填](runs/2026-09-24-round2-http402-resume/midterm_results_insert.md) · [成本](runs/2026-09-24-round2-http402-resume/resource_usage.json)
+L_direct 主门控三种子正确数分别为 236 / 249 / 252/264，实际调用数 50 / 73 / 69；相对仅溢出基线正确数变化 20 / 13 / 11。
+
+L_relation 主门控三种子正确数分别为 234 / 247 / 251/264，实际调用数 50 / 73 / 69；相对仅溢出基线正确数变化 19 / 12 / 11。
+
+L_direct 同调用量随机20次的正确数均值为 224.85 / 240.05 / 243.00/264；三个种子的主门控均高于对应随机均值，仍只支持本264条、12任务组的探索结果，不是统计显著性或全领域保证。
+
+L_relation 同调用量随机20次的正确数均值为 223.85 / 239.15 / 242.15/264；三个种子的主门控均高于对应随机均值，仍只支持本264条、12任务组的探索结果，不是统计显著性或全领域保证。
+
+全量LLM直接臂正确 247/264，关系臂 249/264；关系臂相对直接臂二分类纠错 5、改错 2，正确转暂缓 1、错误转暂缓 1，另有暂缓转正确 0。
+
+固定64条同信息对照：E_field_seed42 50/64（暂缓0）；E_field_seed43 58/64（暂缓0）；E_field_seed44 58/64（暂缓0）；L_direct_short 56/64（暂缓0）；L_direct 58/64（暂缓0）；L_relation 59/64（暂缓1）。
+
+用户最新要求：仅交实验结果与网页GPT Pro证据包，不生成报告/PPT。人工审核0，官方标签为探索参考；三种子和全部预算保留。
+
+
+[网页GPT Pro事实包](runs/2026-09-24-round3-transfer-ablation/GPT_PRO_HANDOFF.md) · [旧缓存消融](runs/2026-09-24-round3-transfer-ablation/mechanism_ablation.csv) · [迁移完整表](runs/2026-09-24-round3-transfer-ablation/transfer_results.csv) · [同信息](runs/2026-09-24-round3-transfer-ablation/information_control.csv) · [直接/关系配对](runs/2026-09-24-round3-transfer-ablation/paired_results.csv) · [原始预测](runs/2026-09-24-round3-transfer-ablation/predictions.jsonl) · [案例](runs/2026-09-24-round3-transfer-ablation/cases.md) · [资源](runs/2026-09-24-round3-transfer-ablation/resource_usage.json)

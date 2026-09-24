@@ -1,5 +1,3 @@
-# GPT Pro审阅入口
-
 # 第三轮运行状态
 
 论文：**基于语义表征与思维链推理协同的智能体恶意指令检测方法**
@@ -24,16 +22,3 @@ L_relation 同调用量随机20次的正确数均值为 223.85 / 239.15 / 242.15
 固定64条同信息对照：E_field_seed42 50/64（暂缓0）；E_field_seed43 58/64（暂缓0）；E_field_seed44 58/64（暂缓0）；L_direct_short 56/64（暂缓0）；L_direct 58/64（暂缓0）；L_relation 59/64（暂缓1）。
 
 用户最新要求：仅交实验结果与网页GPT Pro证据包，不生成报告/PPT。人工审核0，官方标签为探索参考；三种子和全部预算保留。
-
-
-[网页GPT Pro事实包](runs/2026-09-24-round3-transfer-ablation/GPT_PRO_HANDOFF.md) · [旧缓存消融](runs/2026-09-24-round3-transfer-ablation/mechanism_ablation.csv) · [迁移完整表](runs/2026-09-24-round3-transfer-ablation/transfer_results.csv) · [同信息](runs/2026-09-24-round3-transfer-ablation/information_control.csv) · [直接/关系配对](runs/2026-09-24-round3-transfer-ablation/paired_results.csv) · [原始预测](runs/2026-09-24-round3-transfer-ablation/predictions.jsonl) · [案例](runs/2026-09-24-round3-transfer-ablation/cases.md) · [资源](runs/2026-09-24-round3-transfer-ablation/resource_usage.json)
-
-## 本轮重点审阅
-
-1. 比较G_uncertainty与G_overflow、同调用量G_random的增量：S_fit真正纠错/改错、正确转暂缓和未送审错误是否分别报告？不要把溢出恢复当作二分类纠错。
-2. 三种子、原三预算、20个随机送审重复是否报全？dev10%是否被误写成测试调用10%？按任务组宏平均与逐条结果是否一致？
-3. 关系核对相对直接判断是否有稳定净收益？模型主动暂缓、输入溢出、技术故障是否分开？旧800与新2048不可混成同一配置。响应名/服务指纹见资源记录，别名不能证明权重不可变。
-4. 64条同信息对照选择在预测前固定。短输入标签未重新人工验证，不夸大为推理能力单因素因果实验。
-5. 检查8例，尤其旧0404中工具能力与模型解释是否一致。公开为AI概述，必要原文摘录本地保留；human_review仍pending，不是人工gold。
-
-本轮实验与网页端写作证据包已交付；用户最新要求不在本地生成中期报告/PPT，由网页GPT Pro依据本事实包生成。无论有无增益，本轮结束。请依据已经生成的真实结果给出论文主张边界及建议，不视审阅建议为自动启动新算法的授权。原始历史运行目录全部保留。

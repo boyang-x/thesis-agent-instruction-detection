@@ -1,0 +1,36 @@
+{
+  "new_api_calls": 592,
+  "main_calls": 528,
+  "short_calls": 64,
+  "input_tokens": 1011372,
+  "output_tokens": 126999,
+  "cache_hit_tokens": 145408,
+  "cache_miss_tokens": 865964,
+  "request_models": [
+    "deepseek-v4-flash"
+  ],
+  "response_models": [
+    "deepseek-flash"
+  ],
+  "system_fingerprints": [
+    "aeb56401ca74e127821c4f9126dcb669"
+  ],
+  "HTTP_errors": 0,
+  "api_latency_seconds_sum": 799.0444311000684,
+  "started_at": "2026-09-24T13:19:07.746405+00:00",
+  "last_completed_at": "2026-09-24T13:33:03.815936+00:00",
+  "old_test_cached_arms_reused": 192,
+  "old_cache_new_calls": 0,
+  "gpu": {
+    "status": "COMPLETED",
+    "seconds": 15.942111015319824,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "peak_memory_bytes": 1834362368,
+    "new_training_steps": 0,
+    "rows": 264,
+    "fit": 246,
+    "overflow": 18
+  },
+  "cost_invoice_CNY": null,
+  "cost_note": "Tokens reported; provider invoice unavailable, no price assumption introduced."
+}

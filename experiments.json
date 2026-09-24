@@ -112,5 +112,32 @@
       "new_training": false
     },
     "exported_at": "2026-09-24T12:53:41.195315+00:00"
+  },
+  {
+    "run_id": "2026-09-24-round3-transfer-ablation",
+    "path": "runs/2026-09-24-round3-transfer-ablation",
+    "state": {
+      "status": "COMPLETED",
+      "stage_ended": true,
+      "main_pairs": 264,
+      "information_control": 64,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "R1_transfer": "NOT_RUN",
+      "human_reviewed": 0,
+      "new_algorithm": false,
+      "report_and_PPT": "delegated_by_user_to_web_GPT_Pro_not_generated"
+    },
+    "verification": {
+      "prediction_rows": 2224,
+      "verified_table_rows": 1602,
+      "verified_route_settings": 792,
+      "new_api_calls": 592,
+      "status": "VERIFIED"
+    },
+    "exported_at": "2026-09-24T13:40:03.256190+00:00"
   }
 ]

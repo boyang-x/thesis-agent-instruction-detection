@@ -1,0 +1,11 @@
+{
+  "publication_schema": "round3",
+  "run_id": "2026-09-24-round3-transfer-ablation",
+  "frozen_public_commit": "7e2445c6b2e671a5f80b5e1ad2f446d20088fd8a",
+  "exported_at": "2026-09-24T13:39:59.694593+00:00",
+  "native_text": "Full input and response payloads, actual case excerpts retained locally; public source indices and AI paraphrases only.",
+  "source_repository": "existing agent-guardrail-research; main.py unchanged",
+  "original_pack_parser_rules": "unchanged round2 code at frozen public commit, not replaced by this adapter",
+  "new_requests": "2048 output tokens; old800 cohort separate",
+  "new_training": false
+}

@@ -1,0 +1,13 @@
+cohort,domain,view,N,direct_correct,relation_correct,binary_corrected,binary_introduced,correct_to_abstain,wrong_to_abstain,abstain_to_correct,direct_abstain,relation_abstain,relation_raw_effective_disagreement
+old_test_800,combined,all,96,93,93,1,1,0,1,0,0,1,0
+old_test_800,combined,S_fit,82,80,81,1,0,0,0,0,0,0,0
+old_test_800,combined,S_overflow,14,13,12,0,1,0,1,0,0,1,0
+transfer_2048,combined,all,264,247,249,5,2,1,1,0,0,2,1
+transfer_2048,combined,S_fit,246,231,234,4,0,1,1,0,0,2,1
+transfer_2048,combined,S_overflow,18,16,15,1,2,0,0,0,0,0,0
+transfer_2048,banking,all,87,76,76,1,0,1,1,0,0,2,1
+transfer_2048,banking,S_fit,87,76,76,1,0,1,1,0,0,2,1
+transfer_2048,banking,S_overflow,0,0,0,0,0,0,0,0,0,0,0
+transfer_2048,travel,all,177,171,173,4,2,0,0,0,0,0,0
+transfer_2048,travel,S_fit,159,155,158,3,0,0,0,0,0,0,0
+transfer_2048,travel,S_overflow,18,16,15,1,2,0,0,0,0,0,0

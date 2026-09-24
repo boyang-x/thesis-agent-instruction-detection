@@ -1,0 +1,31 @@
+{
+  "upstream_commit": "46358fa424a927a895c6c8322f99032c4eb5155e",
+  "raw_rows": {
+    "banking": 87,
+    "travel": 177
+  },
+  "retained_rows": 264,
+  "excluded_rows": 0,
+  "duplicates_removed": 0,
+  "train_overlap_rows": 0,
+  "human_reviewed": 0,
+  "selection_before_predictions": true,
+  "domains": {
+    "banking": {
+      "N": 87,
+      "groups": 6,
+      "labels": {
+        "unsafe": 28,
+        "safe": 59
+      }
+    },
+    "travel": {
+      "N": 177,
+      "groups": 6,
+      "labels": {
+        "safe": 157,
+        "unsafe": 20
+      }
+    }
+  }
+}

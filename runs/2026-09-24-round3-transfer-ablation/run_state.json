@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETED",
+  "stage_ended": true,
+  "main_pairs": 264,
+  "information_control": 64,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "R1_transfer": "NOT_RUN",
+  "human_reviewed": 0,
+  "new_algorithm": false,
+  "report_and_PPT": "delegated_by_user_to_web_GPT_Pro_not_generated"
+}

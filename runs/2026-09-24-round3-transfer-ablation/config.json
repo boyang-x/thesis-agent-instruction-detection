@@ -1,0 +1,62 @@
+{
+  "run_id": "2026-09-24-round3-transfer-ablation",
+  "publication_schema": "round3",
+  "frozen_public_commit": "7e2445c6b2e671a5f80b5e1ad2f446d20088fd8a",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "budgets": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "gate_thresholds": {
+    "42": {
+      "0.1": 0.49731374881230295,
+      "0.25": 0.4980308711528778,
+      "0.5": 0.49955508578568697
+    },
+    "43": {
+      "0.1": 0.4993842840194702,
+      "0.25": 0.4994451403617859,
+      "0.5": 0.4998165482538752
+    },
+    "44": {
+      "0.1": 0.4994882552418858,
+      "0.25": 0.499650239944458,
+      "0.5": 0.49979880926548503
+    }
+  },
+  "primary_budget": 0.1,
+  "primary_budget_disclosure": "chosen before new predictions using old dev budgets; not original preregistration",
+  "random_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "max_tokens_new": 2048,
+  "max_tokens_old": 800,
+  "short_control_max_N": 64,
+  "new_training": false,
+  "R1_transfer_status": "NOT_RUN_no_saved_vectorizer_classifier",
+  "planned_main_pairs": 528
+}
