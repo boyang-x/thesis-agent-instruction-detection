@@ -22,9 +22,9 @@ def verify(root):
         for k,v in values.items():
             if v is None:assert actual[k]=='',(k,actual[k],v)
             elif isinstance(v,(int,float)):assert math.isclose(float(actual[k]),v,abs_tol=1e-10),(k,actual[k],v)
-    counts={}
+    table_counts={}
     for filename in ['safety_tradeoff.csv','safety_operating_points.csv']:
-        rows=list(csv.DictReader((root/filename).open(encoding='utf-8')));counts[filename]=len(rows)
+        rows=list(csv.DictReader((root/filename).open(encoding='utf-8')));table_counts[filename]=len(rows)
         for r in rows:check(r,expected[key(r)+(r['domain'],)])
     groups=list(csv.DictReader((root/'task_group_results.csv').open(encoding='utf-8')));assert len(groups)==len(groups_expected)
     for r in groups:check(r,groups_expected[key(r)+(r['group_id'],)])
@@ -59,4 +59,4 @@ def verify(root):
     for field,usage in [('input_tokens','prompt_tokens'),('output_tokens','completion_tokens'),('cache_hit_tokens','prompt_cache_hit_tokens'),('cache_miss_tokens','prompt_cache_miss_tokens')]:assert res[field]==sum(c['usage'].get(usage,0) for c in calls)
     assert len([p for p in preds if p.get('phase')=='dev'])==316
     assert len([p for p in preds if p.get('phase')=='relation_short'])==64
-    return dict(status='VERIFIED',prediction_rows=len(preds),safety_rows=counts['safety_tradeoff.csv'],operating_point_rows=counts['safety_operating_points.csv'],task_group_rows=len(groups),integration_rows=len(integration),new_requests=len(calls))
+    return dict(status='VERIFIED',prediction_rows=len(preds),safety_rows=table_counts['safety_tradeoff.csv'],operating_point_rows=table_counts['safety_operating_points.csv'],task_group_rows=len(groups),integration_rows=len(integration),new_requests=len(calls))

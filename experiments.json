@@ -157,12 +157,12 @@
     "verification": {
       "status": "VERIFIED",
       "prediction_rows": 3078,
-      "safety_rows": 0,
-      "operating_point_rows": 0,
+      "safety_rows": 2358,
+      "operating_point_rows": 162,
       "task_group_rows": 7593,
       "integration_rows": 24,
       "new_requests": 392
     },
-    "exported_at": "2026-09-24T14:23:45.757431+00:00"
+    "exported_at": "2026-09-24T14:24:43.901703+00:00"
   }
 ]

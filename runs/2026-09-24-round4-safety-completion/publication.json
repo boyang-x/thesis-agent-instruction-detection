@@ -3,7 +3,7 @@
   "run_id": "2026-09-24-round4-safety-completion",
   "parent_commit": "505c7ac6933bb1eaf8de9e4dbdbd1ade7c58a0dc",
   "source_commit": "f059223210750857e9fb63f42e260ca45b09a779",
-  "exported_at": "2026-09-24T14:23:34.659074+00:00",
+  "exported_at": "2026-09-24T14:24:33.983313+00:00",
   "native_text": "Full native traces and provider bodies retained locally; twelve tool-call excerpts only for interface verification.",
   "scope": "Four user-authorized completion experiments, no training/new prompts/new architecture, no report/PPT",
   "preexecution_entry": "existing proofclarify_research.gate_e2_adapter.GuardedToolsExecutor; unchanged; recording-only runtime"
