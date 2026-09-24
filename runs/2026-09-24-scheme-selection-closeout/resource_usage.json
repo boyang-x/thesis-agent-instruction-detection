@@ -1,0 +1,13 @@
+{
+  "new_requests": 0,
+  "new_input_tokens": 0,
+  "new_output_tokens": 0,
+  "new_cache_tokens": 0,
+  "new_API_cost_CNY": 0,
+  "new_training_steps": 0,
+  "new_GPU_seconds": 0,
+  "cache_prediction_rows": 3078,
+  "analysis_seconds": 4.985398400000122,
+  "call_count_semantics": "deployment_calls in tables: logical historical calls required by each cached policy, NOT newly billed requests; shared cache must not be summed across seeds/budgets/policies",
+  "model_inference": "NOT_RUN_NOT_NEEDED"
+}

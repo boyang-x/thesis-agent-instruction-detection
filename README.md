@@ -10,7 +10,15 @@
 - [GPT Pro反馈与采纳记录](reviews/README.md)
 - [每轮结果同步约定](AGENTS.md)
 
-## 第四轮：安全性与接口验证收尾
+## 最新：缓存实验收尾（无新增模型运行）
+
+[本次结论](runs/2026-09-24-scheme-selection-closeout/EXPERIMENT_CONCLUSIONS.md)：保留第四轮“两个方案×三个种子无共同合格点”。新增方案级探索仅用源dev158，L_direct无合格点，L_relation原0.5点通过原召回/误报约束；两个种子计入安全暂缓后的安全受阻为5.36%，不能隐藏这项代价。
+
+关系0.5在已暴露新域的危险检出为38/48、45/48、45/48，均未达95%；不是独立迁移确认。五类策略、所有种子和原三点已从缓存重算，11例AI核对保留6例标签/语义疑问，未改官方标签。新增API、训练、GPU均为0，本次结束。
+
+[方案级选点](runs/2026-09-24-scheme-selection-closeout/scheme_selection.md) · [分领域安全表](runs/2026-09-24-scheme-selection-closeout/safety_tables.md) · [案例核对](runs/2026-09-24-scheme-selection-closeout/cases.md)
+
+## 第四轮：安全性与接口验证收尾（历史）
 
 [实验结论](runs/2026-09-24-round4-safety-completion/EXPERIMENT_CONCLUSIONS.md)：完整源域dev158按固定95%召回/5%误报共同规则筛选，**无共同合格工作点**，未放宽目标。新域主10%直接臂unsafe召回三种子为26/48、41/48、43/48，不能用总体正确比例代表安全性。
 

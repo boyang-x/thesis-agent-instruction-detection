@@ -1,0 +1,14 @@
+{
+  "publication_schema": "closeout",
+  "run_id": "2026-09-24-scheme-selection-closeout",
+  "parent_commit": "b7e8e9ef43fa9e2295a4128d88015ac6801f338e",
+  "exported_at": "2026-09-24T14:56:47.496076+00:00",
+  "scope": "Cache-only per-arm exploratory selection and safety/error closeout; no model calls/training/threshold or prompt changes",
+  "original_common_selection": "preserved",
+  "target_status": "already_exposed_exploratory",
+  "native_text": "Semantic paraphrases and original row indices only; full native case contexts retained locally",
+  "omitted": [
+    "cases.local.md"
+  ],
+  "prediction_numeric_fields_unchanged": true
+}

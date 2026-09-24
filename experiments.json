@@ -164,5 +164,33 @@
       "new_requests": 392
     },
     "exported_at": "2026-09-24T14:24:43.901703+00:00"
+  },
+  {
+    "run_id": "2026-09-24-scheme-selection-closeout",
+    "path": "runs/2026-09-24-scheme-selection-closeout",
+    "state": {
+      "status": "COMPLETED_CACHE_ONLY",
+      "per_arm_selection": "COMPLETED",
+      "cache_safety_comparison": "COMPLETED",
+      "case_review": "COMPLETED_AI_ONLY_11",
+      "original_common_selection": "NO_COMMON_QUALIFIED_POINT_PRESERVED",
+      "direct_selected_transfer": "NOT_APPLICABLE_NO_QUALIFIED_POINT",
+      "relation_selected_transfer": "COMPLETED_ALREADY_EXPOSED_EXPLORATORY_TARGET_FAILED",
+      "new_API": "NOT_RUN_NOT_NEEDED",
+      "new_training": "NOT_RUN_NOT_REQUESTED",
+      "interface_rerun": "NOT_RUN_ALREADY_COMPLETED",
+      "method_advantage_demonstrated": false,
+      "stage_closed": true
+    },
+    "verification": {
+      "status": "VERIFIED",
+      "prediction_rows": 3078,
+      "table_rows_recomputed": 3948,
+      "selection_rows": 18,
+      "case_rows": 11,
+      "new_requests": 0,
+      "original_common_negative_preserved": true
+    },
+    "exported_at": "2026-09-24T14:56:59.722452+00:00"
   }
 ]

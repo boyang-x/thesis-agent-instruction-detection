@@ -55,6 +55,9 @@ def safe_copy(source, target):
 
 
 def export(source, run_id):
+    if run_id=='2026-09-24-scheme-selection-closeout':
+        from publish_closeout import export as export_closeout
+        return export_closeout(source,run_id)
     if run_id=='2026-09-24-round4-safety-completion':
         from publish_round4 import export as export_v4
         return export_v4(source,run_id)

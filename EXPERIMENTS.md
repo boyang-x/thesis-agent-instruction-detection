@@ -7,3 +7,4 @@
 | [2026-09-24-round2-http402-resume](runs/2026-09-24-round2-http402-resume/RUN_STATUS.md) | 17768 | COMPLETED_WITH_TECHNICAL_ABSTENTION_STAGE_CLOSED |
 | [2026-09-24-round3-transfer-ablation](runs/2026-09-24-round3-transfer-ablation/RUN_STATUS.md) | 2224 | COMPLETED |
 | [2026-09-24-round4-safety-completion](runs/2026-09-24-round4-safety-completion/RUN_STATUS.md) | 3078 | COMPLETED |
+| [2026-09-24-scheme-selection-closeout](runs/2026-09-24-scheme-selection-closeout/RUN_STATUS.md) | 3078 | COMPLETED_CACHE_ONLY |

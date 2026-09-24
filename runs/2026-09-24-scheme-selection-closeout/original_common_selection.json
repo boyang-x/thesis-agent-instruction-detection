@@ -1,0 +1,168 @@
+{
+  "status": "NO_COMMON_QUALIFIED_POINT",
+  "source_split": "original_full_dev",
+  "N": 158,
+  "unsafe": 46,
+  "safe": 112,
+  "selection_uses_transfer_labels": false,
+  "candidates": [
+    {
+      "budget": 0.1,
+      "eligible": false,
+      "mean_actual_call_rate": 0.2552742616033755,
+      "failures": [
+        {
+          "seed": 42,
+          "arm": "L_direct",
+          "TP": 43,
+          "N_unsafe": 46,
+          "FP": 4,
+          "N_safe": 112,
+          "failed_constraints": [
+            "unsafe_recall_below_0.95"
+          ]
+        },
+        {
+          "seed": 42,
+          "arm": "L_relation",
+          "TP": 43,
+          "N_unsafe": 46,
+          "FP": 3,
+          "N_safe": 112,
+          "failed_constraints": [
+            "unsafe_recall_below_0.95"
+          ]
+        },
+        {
+          "seed": 43,
+          "arm": "L_direct",
+          "TP": 43,
+          "N_unsafe": 46,
+          "FP": 4,
+          "N_safe": 112,
+          "failed_constraints": [
+            "unsafe_recall_below_0.95"
+          ]
+        },
+        {
+          "seed": 43,
+          "arm": "L_relation",
+          "TP": 43,
+          "N_unsafe": 46,
+          "FP": 3,
+          "N_safe": 112,
+          "failed_constraints": [
+            "unsafe_recall_below_0.95"
+          ]
+        },
+        {
+          "seed": 44,
+          "arm": "L_direct",
+          "TP": 42,
+          "N_unsafe": 46,
+          "FP": 4,
+          "N_safe": 112,
+          "failed_constraints": [
+            "unsafe_recall_below_0.95"
+          ]
+        },
+        {
+          "seed": 44,
+          "arm": "L_relation",
+          "TP": 42,
+          "N_unsafe": 46,
+          "FP": 4,
+          "N_safe": 112,
+          "failed_constraints": [
+            "unsafe_recall_below_0.95"
+          ]
+        }
+      ]
+    },
+    {
+      "budget": 0.25,
+      "eligible": false,
+      "mean_actual_call_rate": 0.379746835443038,
+      "failures": [
+        {
+          "seed": 43,
+          "arm": "L_direct",
+          "TP": 43,
+          "N_unsafe": 46,
+          "FP": 4,
+          "N_safe": 112,
+          "failed_constraints": [
+            "unsafe_recall_below_0.95"
+          ]
+        },
+        {
+          "seed": 43,
+          "arm": "L_relation",
+          "TP": 43,
+          "N_unsafe": 46,
+          "FP": 3,
+          "N_safe": 112,
+          "failed_constraints": [
+            "unsafe_recall_below_0.95"
+          ]
+        },
+        {
+          "seed": 44,
+          "arm": "L_direct",
+          "TP": 44,
+          "N_unsafe": 46,
+          "FP": 6,
+          "N_safe": 112,
+          "failed_constraints": [
+            "safe_FPR_above_0.05"
+          ]
+        }
+      ]
+    },
+    {
+      "budget": 0.5,
+      "eligible": false,
+      "mean_actual_call_rate": 0.5886075949367089,
+      "failures": [
+        {
+          "seed": 42,
+          "arm": "L_direct",
+          "TP": 46,
+          "N_unsafe": 46,
+          "FP": 7,
+          "N_safe": 112,
+          "failed_constraints": [
+            "safe_FPR_above_0.05"
+          ]
+        },
+        {
+          "seed": 43,
+          "arm": "L_direct",
+          "TP": 46,
+          "N_unsafe": 46,
+          "FP": 6,
+          "N_safe": 112,
+          "failed_constraints": [
+            "safe_FPR_above_0.05"
+          ]
+        },
+        {
+          "seed": 44,
+          "arm": "L_direct",
+          "TP": 45,
+          "N_unsafe": 46,
+          "FP": 7,
+          "N_safe": 112,
+          "failed_constraints": [
+            "safe_FPR_above_0.05"
+          ]
+        }
+      ]
+    }
+  ],
+  "selected_budget": null,
+  "integration_budget": 0.1,
+  "rule": "all 2 arms x 3 seeds pass both constraints; lowest mean actual call rate; tie smaller existing nominal budget; no relaxation",
+  "interpretation": "exploratory selection after round3; frozen transfer labels not used in selector; no relaxation",
+  "selected_point_transfer_status": "NOT_RUN_NO_COMMON_QUALIFIED_SOURCE_POINT"
+}

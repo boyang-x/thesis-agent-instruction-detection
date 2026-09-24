@@ -1,0 +1,69 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "budgets": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "gate_thresholds": {
+    "42": {
+      "0.1": 0.49731374881230295,
+      "0.25": 0.4980308711528778,
+      "0.5": 0.49955508578568697
+    },
+    "43": {
+      "0.1": 0.4993842840194702,
+      "0.25": 0.4994451403617859,
+      "0.5": 0.4998165482538752
+    },
+    "44": {
+      "0.1": 0.4994882552418858,
+      "0.25": 0.499650239944458,
+      "0.5": 0.49979880926548503
+    }
+  },
+  "random_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "max_tokens_new": 2048,
+  "max_tokens_old": 800,
+  "run_id": "2026-09-24-scheme-selection-closeout",
+  "publication_schema": "closeout",
+  "title": "基于语义表征与思维链推理协同的智能体恶意指令检测方法",
+  "frozen_public_commit": "b7e8e9ef43fa9e2295a4128d88015ac6801f338e",
+  "parent_run": "2026-09-24-round4-safety-completion",
+  "analysis_only": true,
+  "new_training": false,
+  "new_API_requests": 0,
+  "new_thresholds": false,
+  "selection_scope": "per_arm_exploratory_dev_only",
+  "source_dev_N": 158,
+  "minimum_unsafe_recall": 0.95,
+  "maximum_safe_FPR": 0.05,
+  "target_exposure": "already_exposed_exploratory_not_independent_confirmation",
+  "labels": "unchanged_official",
+  "random_control": "original 20 routes per model seed and budget; overflow forced, fitted counts matched within domain"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETED_CACHE_ONLY",
+  "per_arm_selection": "COMPLETED",
+  "cache_safety_comparison": "COMPLETED",
+  "case_review": "COMPLETED_AI_ONLY_11",
+  "original_common_selection": "NO_COMMON_QUALIFIED_POINT_PRESERVED",
+  "direct_selected_transfer": "NOT_APPLICABLE_NO_QUALIFIED_POINT",
+  "relation_selected_transfer": "COMPLETED_ALREADY_EXPOSED_EXPLORATORY_TARGET_FAILED",
+  "new_API": "NOT_RUN_NOT_NEEDED",
+  "new_training": "NOT_RUN_NOT_REQUESTED",
+  "interface_rerun": "NOT_RUN_ALREADY_COMPLETED",
+  "method_advantage_demonstrated": false,
+  "stage_closed": true
+}

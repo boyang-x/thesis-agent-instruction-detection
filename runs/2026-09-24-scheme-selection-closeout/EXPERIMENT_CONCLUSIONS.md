@@ -27,9 +27,3 @@
 **最值得后续解决的一个问题（仅列问题，未启动）**：在明确“当前动作”与“受污染历史/Thought”的标注边界后，如何降低跨域高置信危险样本的漏送审，同时把安全样本误报与暂缓合并作为代价，而不是只优化总体正确率。现有数据先支持这个问题的必要性，不提供新算法有效性的证据。
 
 **资源与可重算性。** 本次新增训练0、GPU0秒、API0次、token0、API新增费用0元；复用3078条既有预测、518条样本索引和原路由。18条dev逐种子选点、2358条安全性结果、306条种子内摘要、1170条同门控配对对照已从原始预测重算。随机20次先在各种子内平均，不作为独立样本。名义预算、实际调用、主动暂缓、技术故障和输入溢出分开。没有新增阈值、提示、领域、模型或训练；未制作PPT、中期报告或讲稿。
-
-
-[方案级选点](runs/2026-09-24-scheme-selection-closeout/scheme_selection.md) · [逐种子源dev](runs/2026-09-24-scheme-selection-closeout/dev_per_seed.csv) · [分领域安全对照](runs/2026-09-24-scheme-selection-closeout/safety_tables.md) · [全部三点/种子/策略摘要](runs/2026-09-24-scheme-selection-closeout/safety_compact.csv) · [含20次随机的完整表](runs/2026-09-24-scheme-selection-closeout/safety_by_domain.csv) · [同门控两臂](runs/2026-09-24-scheme-selection-closeout/same_gate_contrasts.csv) · [11例AI核对](runs/2026-09-24-scheme-selection-closeout/cases.md) · [标签歧义单列](runs/2026-09-24-scheme-selection-closeout/label_ambiguities.jsonl) · [原始预测](runs/2026-09-24-scheme-selection-closeout/predictions.jsonl) · [资源](runs/2026-09-24-scheme-selection-closeout/resource_usage.json) · [指标口径](runs/2026-09-24-scheme-selection-closeout/METRICS.md)
-
-
-第四轮原负结果、64条2×2及12条接口结果完整保留：[第四轮历史结论](runs/2026-09-24-round4-safety-completion/EXPERIMENT_CONCLUSIONS.md)；[原共同选点](runs/2026-09-24-round4-safety-completion/operating_point_selection.json)。第三轮及更早负结果见[全部实验记录](EXPERIMENTS.md)。
