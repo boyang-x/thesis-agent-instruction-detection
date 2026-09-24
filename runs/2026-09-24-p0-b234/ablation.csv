@@ -1,0 +1,10 @@
+model,status,train_rows,seeds,evaluation_rows_per_seed,PairAcc_mean,PairAcc_sd,F1_mean,F1_sd,independent_heldout_F1,evidence_status
+B0,COMPLETED,0,deterministic,24,1.0,,1.0,,,exact text/source rules; same diagnostic evaluation inputs
+B1,NOT_RUN,,,,,,,,,outside prioritized pilot; P0 LLM subset does not count as full B6
+B2,COMPLETED_EXPLORATORY,84,42;43;44,24,0.041666666666666664,0.07216878364870322,0.5714285714285714,0.1649572197684645,,same data/backbone/initialization/batches/budget
+B3,COMPLETED_EXPLORATORY,84,42;43;44,24,0.125,0.125,0.35714285714285715,0.31134992453861954,,same data/backbone/initialization/batches/budget
+B4,COMPLETED_EXPLORATORY,84,42;43;44,24,0.125,0.125,0.3904761904761905,0.3384639170269878,,agent-reviewed partial silver evidence; no human gold; not full qualified chain distillation
+B5,NOT_RUN,,,,,,,,,outside prioritized pilot; P0 LLM subset does not count as full B6
+B6,NOT_RUN,,,,,,,,,outside prioritized pilot; P0 LLM subset does not count as full B6
+B7,NOT_RUN,,,,,,,,,outside prioritized pilot; P0 LLM subset does not count as full B6
+Ours,NOT_RUN,,,,,,,,,outside prioritized pilot; P0 LLM subset does not count as full B6

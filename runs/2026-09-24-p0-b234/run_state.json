@@ -1,0 +1,11 @@
+{
+  "P0_data_and_rules": "completed_exploratory",
+  "P0_human_review": "pending_120_rows",
+  "P0_LLM": "completed",
+  "B2": "COMPLETED_3_SEEDS_EXPLORATORY",
+  "B3": "COMPLETED_3_SEEDS_EXPLORATORY",
+  "B4": "COMPLETED_3_SEEDS_PARTIAL_SILVER_EVIDENCE",
+  "scientific_gate": "NOT_EVALUABLE_NO_INDEPENDENT_GOLD_TEST_OR_NATIVE_HELDOUT_F1",
+  "method_advantage_demonstrated": false,
+  "closed_loop": "NOT_RUN"
+}

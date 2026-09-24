@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETED",
+  "model": "B2",
+  "seed": 44,
+  "steps": 56,
+  "train_rows": 84,
+  "predictions": 68,
+  "started_unix": 1790247259.1504261,
+  "ended_unix": 1790247266.8589058,
+  "seconds": 7.708480358123779,
+  "initial_risk_weight_sum": 0.8698578619937507,
+  "evidence_gradient_check": null,
+  "max_memory_allocated_bytes": 7891806208
+}

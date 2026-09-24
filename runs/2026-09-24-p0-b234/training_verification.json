@@ -1,0 +1,23 @@
+{
+  "equal_data_steps_and_initial_head_check": "PASS",
+  "B4_encoder_gradient_checks": [
+    {
+      "evidence_loss": 0.6897092461585999,
+      "encoder_embedding_grad_norm_from_evidence_only": 0.30241915583610535,
+      "supervised_segments": 7
+    },
+    {
+      "evidence_loss": 0.6059719324111938,
+      "encoder_embedding_grad_norm_from_evidence_only": 0.2193700671195984,
+      "supervised_segments": 12
+    },
+    {
+      "evidence_loss": 0.6653704047203064,
+      "encoder_embedding_grad_norm_from_evidence_only": 0.2469630092382431,
+      "supervised_segments": 3
+    }
+  ],
+  "nonfinite_loss_count": 0,
+  "evidence_semantics": "agent-reviewed partial silver masks only; human correctness rate unknown",
+  "p0_integrity_tests": "7 tests passed"
+}

@@ -1,0 +1,74 @@
+{
+  "experiment_id": "thesis-context-server-pilot-v2",
+  "authorized_by": "2026-09-24 user permits server experiments",
+  "prelaunch_correction": "v1 freeze rejected before training: f01/f08 share identical unsafe inputs. f08 moved wholly to train; f06 moved wholly from dev to exploratory evaluation. No model training or tuning took place in v1; original packet preserved.",
+  "frozen_at": "2026-09-24T10:52:32.549479+00:00",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "models": [
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "model_path": "/models",
+  "model_source": "microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank cached BertForTokenClassification backbone",
+  "backbone_note": "Already compression-tuned multilingual BERT, not a newly downloaded generic DeBERTa; identical backbone for all arms; English only",
+  "learning_rate": 2e-05,
+  "epochs": 8,
+  "groups_per_batch": 4,
+  "max_length": 512,
+  "margin": 1.0,
+  "lambda_pair": 0.5,
+  "lambda_inv": 0.1,
+  "lambda_evi": 0.2,
+  "threshold": 0.5,
+  "threshold_selection": "fixed a priori; no test tuning",
+  "checkpoint": "final epoch, no cherry-picking",
+  "precision": "float32",
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "splits": {
+    "train": [
+      "f00",
+      "f01",
+      "f02",
+      "f03",
+      "f05",
+      "f07",
+      "f08"
+    ],
+    "dev": [
+      "f04"
+    ],
+    "evaluation_exploratory": [
+      "f06",
+      "f09"
+    ]
+  },
+  "counts": {
+    "native_evaluation_exploratory": 32,
+    "train": 84,
+    "dev": 12,
+    "evaluation_exploratory": 24
+  },
+  "evidence_reviewed": 48,
+  "evidence_accepted": 42,
+  "evidence_review_scope": "42 agent-reviewed silver records; only u1 positives and explicitly irrelevant o_noise negatives; no human gold claims",
+  "primary_status": "ENGINEERING_AND_EXPLORATORY_ONLY",
+  "limitations": [
+    "P0 B0 solved 40/40 pairs; no demonstrated need for learned complexity",
+    "all 40 groups already viewed and model-screened; this split is not blind test",
+    "template-family disjoint; entity names shared; exact-input overlap checked",
+    "native official train split unavailable; native records evaluation only",
+    "B4 is silver partial evidence localization supervision, not qualified human-reviewed complete semantic-CoT claim",
+    "no same-extra-label/generic-evidence control this round"
+  ],
+  "same_data": true,
+  "same_initialization_within_seed": true,
+  "same_batches_and_steps": true,
+  "max_gpu_hours": 1,
+  "max_runs": 9
+}

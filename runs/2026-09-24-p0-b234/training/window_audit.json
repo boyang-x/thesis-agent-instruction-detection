@@ -1,0 +1,1738 @@
+[
+  {
+    "sample_id": "ts_slack_0067",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1083,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0023",
+    "split": "native_evaluation_exploratory",
+    "tokens": 637,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0058",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1141,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0091",
+    "split": "native_evaluation_exploratory",
+    "tokens": 20722,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0092",
+    "split": "native_evaluation_exploratory",
+    "tokens": 12996,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0100",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1073,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0140",
+    "split": "native_evaluation_exploratory",
+    "tokens": 657,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0178",
+    "split": "native_evaluation_exploratory",
+    "tokens": 4856,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0191",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1164,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0238",
+    "split": "native_evaluation_exploratory",
+    "tokens": 2514,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0257",
+    "split": "native_evaluation_exploratory",
+    "tokens": 9464,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0316",
+    "split": "native_evaluation_exploratory",
+    "tokens": 774,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0325",
+    "split": "native_evaluation_exploratory",
+    "tokens": 753,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0330",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1260,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0341",
+    "split": "native_evaluation_exploratory",
+    "tokens": 10522,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0404",
+    "split": "native_evaluation_exploratory",
+    "tokens": 2328,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0407",
+    "split": "native_evaluation_exploratory",
+    "tokens": 475,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0412",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1008,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0452",
+    "split": "native_evaluation_exploratory",
+    "tokens": 15382,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0463",
+    "split": "native_evaluation_exploratory",
+    "tokens": 858,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0470",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1467,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0555",
+    "split": "native_evaluation_exploratory",
+    "tokens": 12461,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0595",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1860,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0596",
+    "split": "native_evaluation_exploratory",
+    "tokens": 2847,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0599",
+    "split": "native_evaluation_exploratory",
+    "tokens": 10986,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0698",
+    "split": "native_evaluation_exploratory",
+    "tokens": 2178,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0705",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1794,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0755",
+    "split": "native_evaluation_exploratory",
+    "tokens": 13673,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0759",
+    "split": "native_evaluation_exploratory",
+    "tokens": 1616,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0795",
+    "split": "native_evaluation_exploratory",
+    "tokens": 2675,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0817",
+    "split": "native_evaluation_exploratory",
+    "tokens": 4511,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "ts_workspace_0822",
+    "split": "native_evaluation_exploratory",
+    "tokens": 776,
+    "truncated": true,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_0_safe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_0_unsafe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_0_noise",
+    "split": "train",
+    "tokens": 311,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_1_safe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_1_unsafe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_1_noise",
+    "split": "train",
+    "tokens": 310,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_2_safe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_2_unsafe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_2_noise",
+    "split": "train",
+    "tokens": 310,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_3_safe",
+    "split": "train",
+    "tokens": 282,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_3_unsafe",
+    "split": "train",
+    "tokens": 282,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f00_3_noise",
+    "split": "train",
+    "tokens": 314,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_0_safe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_0_unsafe",
+    "split": "train",
+    "tokens": 280,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_0_noise",
+    "split": "train",
+    "tokens": 311,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_1_safe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_1_unsafe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_1_noise",
+    "split": "train",
+    "tokens": 311,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_2_safe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_2_unsafe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_2_noise",
+    "split": "train",
+    "tokens": 310,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_3_safe",
+    "split": "train",
+    "tokens": 282,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_3_unsafe",
+    "split": "train",
+    "tokens": 283,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f01_3_noise",
+    "split": "train",
+    "tokens": 315,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_0_safe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_0_unsafe",
+    "split": "train",
+    "tokens": 280,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_0_noise",
+    "split": "train",
+    "tokens": 311,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_1_safe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_1_unsafe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_1_noise",
+    "split": "train",
+    "tokens": 311,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_2_safe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_2_unsafe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_2_noise",
+    "split": "train",
+    "tokens": 310,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_3_safe",
+    "split": "train",
+    "tokens": 282,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_3_unsafe",
+    "split": "train",
+    "tokens": 283,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f02_3_noise",
+    "split": "train",
+    "tokens": 315,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_0_safe",
+    "split": "train",
+    "tokens": 309,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_0_unsafe",
+    "split": "train",
+    "tokens": 306,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_0_noise",
+    "split": "train",
+    "tokens": 341,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_1_safe",
+    "split": "train",
+    "tokens": 308,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_1_unsafe",
+    "split": "train",
+    "tokens": 305,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_1_noise",
+    "split": "train",
+    "tokens": 337,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_2_safe",
+    "split": "train",
+    "tokens": 308,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_2_unsafe",
+    "split": "train",
+    "tokens": 305,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_2_noise",
+    "split": "train",
+    "tokens": 340,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_3_safe",
+    "split": "train",
+    "tokens": 313,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_3_unsafe",
+    "split": "train",
+    "tokens": 310,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f03_3_noise",
+    "split": "train",
+    "tokens": 342,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_0_safe",
+    "split": "dev",
+    "tokens": 302,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_0_unsafe",
+    "split": "dev",
+    "tokens": 302,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_0_noise",
+    "split": "dev",
+    "tokens": 334,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_1_safe",
+    "split": "dev",
+    "tokens": 301,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_1_unsafe",
+    "split": "dev",
+    "tokens": 301,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_1_noise",
+    "split": "dev",
+    "tokens": 333,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_2_safe",
+    "split": "dev",
+    "tokens": 301,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_2_unsafe",
+    "split": "dev",
+    "tokens": 301,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_2_noise",
+    "split": "dev",
+    "tokens": 333,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_3_safe",
+    "split": "dev",
+    "tokens": 305,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_3_unsafe",
+    "split": "dev",
+    "tokens": 305,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f04_3_noise",
+    "split": "dev",
+    "tokens": 337,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_0_safe",
+    "split": "train",
+    "tokens": 316,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_0_unsafe",
+    "split": "train",
+    "tokens": 316,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_0_noise",
+    "split": "train",
+    "tokens": 348,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_1_safe",
+    "split": "train",
+    "tokens": 315,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_1_unsafe",
+    "split": "train",
+    "tokens": 315,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_1_noise",
+    "split": "train",
+    "tokens": 347,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_2_safe",
+    "split": "train",
+    "tokens": 315,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_2_unsafe",
+    "split": "train",
+    "tokens": 315,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_2_noise",
+    "split": "train",
+    "tokens": 347,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_3_safe",
+    "split": "train",
+    "tokens": 320,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_3_unsafe",
+    "split": "train",
+    "tokens": 320,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f05_3_noise",
+    "split": "train",
+    "tokens": 352,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_0_safe",
+    "split": "evaluation_exploratory",
+    "tokens": 305,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_0_unsafe",
+    "split": "evaluation_exploratory",
+    "tokens": 304,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_0_noise",
+    "split": "evaluation_exploratory",
+    "tokens": 337,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_1_safe",
+    "split": "evaluation_exploratory",
+    "tokens": 304,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_1_unsafe",
+    "split": "evaluation_exploratory",
+    "tokens": 303,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_1_noise",
+    "split": "evaluation_exploratory",
+    "tokens": 335,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_2_safe",
+    "split": "evaluation_exploratory",
+    "tokens": 304,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_2_unsafe",
+    "split": "evaluation_exploratory",
+    "tokens": 303,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_2_noise",
+    "split": "evaluation_exploratory",
+    "tokens": 336,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_3_safe",
+    "split": "evaluation_exploratory",
+    "tokens": 308,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_3_unsafe",
+    "split": "evaluation_exploratory",
+    "tokens": 307,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f06_3_noise",
+    "split": "evaluation_exploratory",
+    "tokens": 339,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_0_safe",
+    "split": "train",
+    "tokens": 283,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_0_unsafe",
+    "split": "train",
+    "tokens": 286,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_0_noise",
+    "split": "train",
+    "tokens": 315,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_1_safe",
+    "split": "train",
+    "tokens": 282,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_1_unsafe",
+    "split": "train",
+    "tokens": 285,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_1_noise",
+    "split": "train",
+    "tokens": 317,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_2_safe",
+    "split": "train",
+    "tokens": 282,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_2_unsafe",
+    "split": "train",
+    "tokens": 285,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_2_noise",
+    "split": "train",
+    "tokens": 314,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_3_safe",
+    "split": "train",
+    "tokens": 286,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_3_unsafe",
+    "split": "train",
+    "tokens": 289,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f07_3_noise",
+    "split": "train",
+    "tokens": 321,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_0_safe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_0_unsafe",
+    "split": "train",
+    "tokens": 280,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_0_noise",
+    "split": "train",
+    "tokens": 311,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_1_safe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_1_unsafe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_1_noise",
+    "split": "train",
+    "tokens": 311,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_2_safe",
+    "split": "train",
+    "tokens": 278,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_2_unsafe",
+    "split": "train",
+    "tokens": 279,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_2_noise",
+    "split": "train",
+    "tokens": 310,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_3_safe",
+    "split": "train",
+    "tokens": 282,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_3_unsafe",
+    "split": "train",
+    "tokens": 283,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f08_3_noise",
+    "split": "train",
+    "tokens": 315,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_0_safe",
+    "split": "evaluation_exploratory",
+    "tokens": 324,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_0_unsafe",
+    "split": "evaluation_exploratory",
+    "tokens": 318,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_0_noise",
+    "split": "evaluation_exploratory",
+    "tokens": 356,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_1_safe",
+    "split": "evaluation_exploratory",
+    "tokens": 323,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_1_unsafe",
+    "split": "evaluation_exploratory",
+    "tokens": 317,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_1_noise",
+    "split": "evaluation_exploratory",
+    "tokens": 349,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_2_safe",
+    "split": "evaluation_exploratory",
+    "tokens": 323,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_2_unsafe",
+    "split": "evaluation_exploratory",
+    "tokens": 317,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_2_noise",
+    "split": "evaluation_exploratory",
+    "tokens": 355,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_3_safe",
+    "split": "evaluation_exploratory",
+    "tokens": 328,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_3_unsafe",
+    "split": "evaluation_exploratory",
+    "tokens": 322,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1
+    ]
+  },
+  {
+    "sample_id": "diagnostic_f09_3_noise",
+    "split": "evaluation_exploratory",
+    "tokens": 354,
+    "truncated": false,
+    "evidence_targets": [
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  }
+]

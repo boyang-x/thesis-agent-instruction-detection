@@ -1,0 +1,18 @@
+{
+  "run_id": "2026-09-24-p0-b234",
+  "exported_at": "2026-09-24T11:13:16.995560+00:00",
+  "source_repository": "boyang-x/agent-guardrail-research",
+  "source_commit": "f059223210750857e9fb63f42e260ca45b09a779",
+  "source_code_state": "experiment subdirectory originally untracked; public code snapshot included",
+  "publication_scope": "necessary review packet",
+  "prediction_numeric_fields_unchanged": true,
+  "omissions": [
+    "full native dataset and native API payloads",
+    "private infrastructure coordinates",
+    "credentials",
+    "model weights/checkpoints",
+    "irrelevant historical files"
+  ],
+  "native_input_recovery": "use data_manifest upstream commit and sample_index source_file/source_row",
+  "raw_native_artifacts_retained_locally": true
+}

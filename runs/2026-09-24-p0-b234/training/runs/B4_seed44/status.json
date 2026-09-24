@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "model": "B4",
+  "seed": 44,
+  "steps": 56,
+  "train_rows": 84,
+  "predictions": 68,
+  "started_unix": 1790247274.838629,
+  "ended_unix": 1790247282.761397,
+  "seconds": 7.922768831253052,
+  "initial_risk_weight_sum": 0.8698578619937507,
+  "evidence_gradient_check": {
+    "evidence_loss": 0.6653704047203064,
+    "encoder_embedding_grad_norm_from_evidence_only": 0.2469630092382431,
+    "supervised_segments": 3
+  },
+  "max_memory_allocated_bytes": 7891806208
+}

@@ -1,0 +1,5543 @@
+{
+  "computed_at": "2026-09-24T11:02:21.051164+00:00",
+  "source": "predictions.jsonl",
+  "results": {
+    "B0/diagnostic_development": {
+      "n": 120,
+      "origin_count": 40,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 60,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 60,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 60,
+        "FP": 0,
+        "TN": 60,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 120,
+        "denominator": 120,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 120,
+        "denominator": 120,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 120,
+        "denominator": 120,
+        "value": 1.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 60,
+        "denominator": 60,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 60,
+        "denominator": 60,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 60,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 60,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 60,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 60,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 60,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 1.0,
+      "pr_auc_score_limitation": "hard 0/1 decisions only; this is a two-threshold AP, not a calibrated model ranking curve",
+      "PairAcc": {
+        "numerator": 40,
+        "denominator": 40,
+        "value": 1.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        1.0,
+        1.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 40,
+        "denominator": 40,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 40,
+        "denominator": 40,
+        "value": 1.0
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 40,
+        "denominator": 40,
+        "value": 1.0
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 40,
+        "denominator": 40,
+        "value": 1.0
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 0.05251916621394533,
+      "p95_latency_ms": 0.13208000018494198,
+      "latency_scope": "measured real wall-clock request time including connection setup; budget-skipped items excluded",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null
+    },
+    "B0/native_static_all": {
+      "n": 944,
+      "origin_count": 498,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 630,
+          "unsafe": 5,
+          "abstain": 15
+        },
+        "unsafe": {
+          "safe": 24,
+          "unsafe": 230,
+          "abstain": 40
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 230,
+        "FP": 5,
+        "TN": 630,
+        "FN": 24
+      },
+      "coverage": {
+        "numerator": 889,
+        "denominator": 944,
+        "value": 0.9417372881355932
+      },
+      "abstain_count": 55,
+      "correct_over_all": {
+        "numerator": 860,
+        "denominator": 944,
+        "value": 0.9110169491525424
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 460,
+        "denominator": 489,
+        "value": 0.9406952965235174
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 230,
+        "denominator": 294,
+        "value": 0.782312925170068
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 230,
+        "denominator": 254,
+        "value": 0.905511811023622
+      },
+      "fpr_over_all_safe": {
+        "numerator": 5,
+        "denominator": 650,
+        "value": 0.007692307692307693
+      },
+      "fpr_on_covered": {
+        "numerator": 5,
+        "denominator": 635,
+        "value": 0.007874015748031496
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 24,
+        "denominator": 294,
+        "value": 0.08163265306122448
+      },
+      "safe_abstain": {
+        "numerator": 15,
+        "denominator": 650,
+        "value": 0.023076923076923078
+      },
+      "unsafe_abstain": {
+        "numerator": 40,
+        "denominator": 294,
+        "value": 0.1360544217687075
+      },
+      "pr_auc_average_precision_on_covered": 0.9132422277002609,
+      "pr_auc_score_limitation": "hard 0/1 decisions only; this is a two-threshold AP, not a calibrated model ranking curve",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 0.024183156718640544,
+      "p95_latency_ms": 0.07299500393855844,
+      "latency_scope": "measured real wall-clock request time including connection setup; budget-skipped items excluded",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null
+    },
+    "B0/native_static_matched": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 22,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 1,
+          "unsafe": 7,
+          "abstain": 2
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 7,
+        "FP": 0,
+        "TN": 22,
+        "FN": 1
+      },
+      "coverage": {
+        "numerator": 30,
+        "denominator": 32,
+        "value": 0.9375
+      },
+      "abstain_count": 2,
+      "correct_over_all": {
+        "numerator": 29,
+        "denominator": 32,
+        "value": 0.90625
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 14,
+        "denominator": 15,
+        "value": 0.9333333333333333
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 7,
+        "denominator": 10,
+        "value": 0.7
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 7,
+        "denominator": 8,
+        "value": 0.875
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 1,
+        "denominator": 10,
+        "value": 0.1
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 2,
+        "denominator": 10,
+        "value": 0.2
+      },
+      "pr_auc_average_precision_on_covered": 0.9083333333333333,
+      "pr_auc_score_limitation": "hard 0/1 decisions only; this is a two-threshold AP, not a calibrated model ranking curve",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 0.02226249989689677,
+      "p95_latency_ms": 0.06417000076908153,
+      "latency_scope": "measured real wall-clock request time including connection setup; budget-skipped items excluded",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null
+    },
+    "P0_LLM_evidence/diagnostic_development": {
+      "n": 120,
+      "origin_count": 40,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 53,
+          "unsafe": 6,
+          "abstain": 1
+        },
+        "unsafe": {
+          "safe": 6,
+          "unsafe": 53,
+          "abstain": 1
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 53,
+        "FP": 6,
+        "TN": 53,
+        "FN": 6
+      },
+      "coverage": {
+        "numerator": 118,
+        "denominator": 120,
+        "value": 0.9833333333333333
+      },
+      "abstain_count": 2,
+      "correct_over_all": {
+        "numerator": 106,
+        "denominator": 120,
+        "value": 0.8833333333333333
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 106,
+        "denominator": 118,
+        "value": 0.8983050847457628
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 53,
+        "denominator": 60,
+        "value": 0.8833333333333333
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 53,
+        "denominator": 59,
+        "value": 0.8983050847457628
+      },
+      "fpr_over_all_safe": {
+        "numerator": 6,
+        "denominator": 60,
+        "value": 0.1
+      },
+      "fpr_on_covered": {
+        "numerator": 6,
+        "denominator": 59,
+        "value": 0.1016949152542373
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 6,
+        "denominator": 60,
+        "value": 0.1
+      },
+      "safe_abstain": {
+        "numerator": 1,
+        "denominator": 60,
+        "value": 0.016666666666666666
+      },
+      "unsafe_abstain": {
+        "numerator": 1,
+        "denominator": 60,
+        "value": 0.016666666666666666
+      },
+      "pr_auc_average_precision_on_covered": 0.8577994829072105,
+      "pr_auc_score_limitation": "hard 0/1 decisions only; this is a two-threshold AP, not a calibrated model ranking curve",
+      "PairAcc": {
+        "numerator": 30,
+        "denominator": 40,
+        "value": 0.75
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.625,
+        0.875
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 38,
+        "denominator": 40,
+        "value": 0.95
+      },
+      "invariance_base_accuracy": {
+        "numerator": 34,
+        "denominator": 40,
+        "value": 0.85
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 36,
+        "denominator": 40,
+        "value": 0.9
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 34,
+        "denominator": 40,
+        "value": 0.85
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 118,
+        "denominator": 120,
+        "value": 0.9833333333333333
+      },
+      "evidence_reference_validity": {
+        "numerator": 275,
+        "denominator": 277,
+        "value": 0.9927797833935018
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 13,
+      "mean_latency_ms": 2596.0725549995914,
+      "p95_latency_ms": 3165.5208350035537,
+      "latency_scope": "measured real wall-clock request time including connection setup; budget-skipped items excluded",
+      "input_tokens": 56648,
+      "output_tokens": 23258,
+      "errors": {
+        "INVALID_EVIDENCE_REFERENCE": 2
+      },
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null
+    },
+    "P0_LLM_evidence/native_static_matched": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 13,
+          "unsafe": 0,
+          "abstain": 9
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 3,
+          "abstain": 7
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 3,
+        "FP": 0,
+        "TN": 13,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 16,
+        "denominator": 32,
+        "value": 0.5
+      },
+      "abstain_count": 16,
+      "correct_over_all": {
+        "numerator": 16,
+        "denominator": 32,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 3,
+        "denominator": 10,
+        "value": 0.3
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 3,
+        "denominator": 3,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 13,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 9,
+        "denominator": 22,
+        "value": 0.4090909090909091
+      },
+      "unsafe_abstain": {
+        "numerator": 7,
+        "denominator": 10,
+        "value": 0.7
+      },
+      "pr_auc_average_precision_on_covered": 1.0,
+      "pr_auc_score_limitation": "hard 0/1 decisions only; this is a two-threshold AP, not a calibrated model ranking curve",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 16,
+        "denominator": 16,
+        "value": 1.0
+      },
+      "evidence_reference_validity": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 2653.561668749262,
+      "p95_latency_ms": 3001.5719499988336,
+      "latency_scope": "measured real wall-clock request time including connection setup; budget-skipped items excluded",
+      "input_tokens": 18110,
+      "output_tokens": 2803,
+      "errors": {
+        "INPUT_BUDGET_SKIP": 16
+      },
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null
+    },
+    "B2/seed42/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 6,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 18,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.5814814814814815,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.210981876899798,
+      "p95_latency_ms": 7.486880291253328,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B2/seed42/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 12,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 12,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 12,
+        "FP": 12,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 12,
+        "denominator": 24,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 24,
+        "denominator": 36,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.7646208845857183,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 8,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.293462636880577,
+      "p95_latency_ms": 7.767657749354838,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B2/seed42/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 22,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 10,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 10,
+        "FP": 22,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 10,
+        "denominator": 32,
+        "value": 0.3125
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 20,
+        "denominator": 42,
+        "value": 0.47619047619047616
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.44768231768231764,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.1241388795897365,
+      "p95_latency_ms": 7.702890178188682,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": false
+    },
+    "B2/seed42/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 1,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 1,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.142943330109119,
+      "p95_latency_ms": 7.142943330109119,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B2/seed43/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 4,
+          "unsafe": 2,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 2,
+          "unsafe": 4,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 4,
+        "FP": 2,
+        "TN": 4,
+        "FN": 2
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 8,
+        "denominator": 12,
+        "value": 0.6666666666666666
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 8,
+        "denominator": 12,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "fpr_over_all_safe": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "fpr_on_covered": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.6746031746031746,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.1182580043872195,
+      "p95_latency_ms": 7.387878466397524,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B2/seed43/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 8,
+          "unsafe": 4,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 4,
+          "unsafe": 8,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 8,
+        "FP": 4,
+        "TN": 8,
+        "FN": 4
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 16,
+        "denominator": 24,
+        "value": 0.6666666666666666
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 16,
+        "denominator": 24,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 8,
+        "denominator": 12,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 8,
+        "denominator": 12,
+        "value": 0.6666666666666666
+      },
+      "fpr_over_all_safe": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      },
+      "fpr_on_covered": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.6429838880925838,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 8,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.04088849791636,
+      "p95_latency_ms": 7.112319581210613,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B2/seed43/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 15,
+          "unsafe": 7,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 2,
+          "unsafe": 8,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 8,
+        "FP": 7,
+        "TN": 15,
+        "FN": 2
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 23,
+        "denominator": 32,
+        "value": 0.71875
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 16,
+        "denominator": 25,
+        "value": 0.64
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "fpr_over_all_safe": {
+        "numerator": 7,
+        "denominator": 22,
+        "value": 0.3181818181818182
+      },
+      "fpr_on_covered": {
+        "numerator": 7,
+        "denominator": 22,
+        "value": 0.3181818181818182
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 2,
+        "denominator": 10,
+        "value": 0.2
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.6234426194720313,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 6.962686340557411,
+      "p95_latency_ms": 7.033676560968161,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": false
+    },
+    "B2/seed43/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 1,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 1,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.047642953693867,
+      "p95_latency_ms": 7.047642953693867,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B2/seed44/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 1,
+          "unsafe": 5,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 5,
+        "TN": 1,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 7,
+        "denominator": 12,
+        "value": 0.5833333333333334
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 17,
+        "value": 0.7058823529411765
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 5,
+        "denominator": 6,
+        "value": 0.8333333333333334
+      },
+      "fpr_on_covered": {
+        "numerator": 5,
+        "denominator": 6,
+        "value": 0.8333333333333334
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.8,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 3,
+        "denominator": 4,
+        "value": 0.75
+      },
+      "invariance_base_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 3,
+        "denominator": 4,
+        "value": 0.75
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.1571945057561,
+      "p95_latency_ms": 7.429898297414184,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B2/seed44/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 7,
+          "unsafe": 5,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 8,
+          "unsafe": 4,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 4,
+        "FP": 5,
+        "TN": 7,
+        "FN": 8
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 11,
+        "denominator": 24,
+        "value": 0.4583333333333333
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 8,
+        "denominator": 21,
+        "value": 0.38095238095238093
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      },
+      "fpr_over_all_safe": {
+        "numerator": 5,
+        "denominator": 12,
+        "value": 0.4166666666666667
+      },
+      "fpr_on_covered": {
+        "numerator": 5,
+        "denominator": 12,
+        "value": 0.4166666666666667
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 8,
+        "denominator": 12,
+        "value": 0.6666666666666666
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.5565560467940498,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 1,
+        "denominator": 8,
+        "value": 0.125
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.375
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 7,
+        "denominator": 8,
+        "value": 0.875
+      },
+      "invariance_base_accuracy": {
+        "numerator": 5,
+        "denominator": 8,
+        "value": 0.625
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.063415211935838,
+      "p95_latency_ms": 7.157322112470865,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B2/seed44/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 11,
+          "unsafe": 11,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 2,
+          "unsafe": 8,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 8,
+        "FP": 11,
+        "TN": 11,
+        "FN": 2
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 19,
+        "denominator": 32,
+        "value": 0.59375
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 16,
+        "denominator": 29,
+        "value": 0.5517241379310345
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "fpr_over_all_safe": {
+        "numerator": 11,
+        "denominator": 22,
+        "value": 0.5
+      },
+      "fpr_on_covered": {
+        "numerator": 11,
+        "denominator": 22,
+        "value": 0.5
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 2,
+        "denominator": 10,
+        "value": 0.2
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.38829078329078326,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.040792930638418,
+      "p95_latency_ms": 7.077922159805894,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": false
+    },
+    "B2/seed44/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 1,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 1,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.0295510813593864,
+      "p95_latency_ms": 7.0295510813593864,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed42/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 6,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 6,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 6,
+        "FN": 6
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.744047619047619,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.145150564610958,
+      "p95_latency_ms": 7.376341335475445,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed42/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 12,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 12,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 12,
+        "FN": 12
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 12,
+        "denominator": 24,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.682246103569633,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 8,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.056651598153015,
+      "p95_latency_ms": 7.123074168339372,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed42/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 22,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 10,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 22,
+        "FN": 10
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 22,
+        "denominator": 32,
+        "value": 0.6875
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.34957995951417,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.0822898705955595,
+      "p95_latency_ms": 7.746009435504675,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": false
+    },
+    "B3/seed42/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 1,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 1,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.079390808939934,
+      "p95_latency_ms": 7.079390808939934,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed43/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 5,
+          "unsafe": 1,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 2,
+          "unsafe": 4,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 4,
+        "FP": 1,
+        "TN": 5,
+        "FN": 2
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 9,
+        "denominator": 12,
+        "value": 0.75
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 8,
+        "denominator": 11,
+        "value": 0.7272727272727273
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "fpr_over_all_safe": {
+        "numerator": 1,
+        "denominator": 6,
+        "value": 0.16666666666666666
+      },
+      "fpr_on_covered": {
+        "numerator": 1,
+        "denominator": 6,
+        "value": 0.16666666666666666
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 2,
+        "denominator": 6,
+        "value": 0.3333333333333333
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.8357142857142856,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 1,
+        "denominator": 4,
+        "value": 0.25
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.75
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.128494170804818,
+      "p95_latency_ms": 7.394131692126393,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed43/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 12,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 8,
+          "unsafe": 4,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 4,
+        "FP": 0,
+        "TN": 12,
+        "FN": 8
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 16,
+        "denominator": 24,
+        "value": 0.6666666666666666
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 8,
+        "denominator": 16,
+        "value": 0.5
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 4,
+        "denominator": 12,
+        "value": 0.3333333333333333
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 8,
+        "denominator": 12,
+        "value": 0.6666666666666666
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.9752747252747254,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 2,
+        "denominator": 8,
+        "value": 0.25
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.625
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 6,
+        "denominator": 8,
+        "value": 0.75
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 6,
+        "denominator": 8,
+        "value": 0.75
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 6,
+        "denominator": 8,
+        "value": 0.75
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.116124189148347,
+      "p95_latency_ms": 7.484966656193137,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed43/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 18,
+          "unsafe": 4,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 4,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 4,
+        "TN": 18,
+        "FN": 4
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 24,
+        "denominator": 32,
+        "value": 0.75
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 20,
+        "value": 0.6
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 10,
+        "value": 0.6
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 10,
+        "value": 0.6
+      },
+      "fpr_over_all_safe": {
+        "numerator": 4,
+        "denominator": 22,
+        "value": 0.18181818181818182
+      },
+      "fpr_on_covered": {
+        "numerator": 4,
+        "denominator": 22,
+        "value": 0.18181818181818182
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 4,
+        "denominator": 10,
+        "value": 0.4
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.6590002154708039,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 6.965285720070824,
+      "p95_latency_ms": 7.0245704613626,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": false
+    },
+    "B3/seed43/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 1,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 1,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.021126337349415,
+      "p95_latency_ms": 7.021126337349415,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed44/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 6,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 18,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.3702020202020202,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.119798023874561,
+      "p95_latency_ms": 7.348991231992841,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed44/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 9,
+          "unsafe": 3,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 6,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 3,
+        "TN": 9,
+        "FN": 6
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 15,
+        "denominator": 24,
+        "value": 0.625
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 21,
+        "value": 0.5714285714285714
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "fpr_over_all_safe": {
+        "numerator": 3,
+        "denominator": 12,
+        "value": 0.25
+      },
+      "fpr_on_covered": {
+        "numerator": 3,
+        "denominator": 12,
+        "value": 0.25
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.8271899668958492,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 1,
+        "denominator": 8,
+        "value": 0.125
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.375
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 7,
+        "denominator": 8,
+        "value": 0.875
+      },
+      "invariance_base_accuracy": {
+        "numerator": 5,
+        "denominator": 8,
+        "value": 0.625
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 6,
+        "denominator": 8,
+        "value": 0.75
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 5,
+        "denominator": 8,
+        "value": 0.625
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.042611250653863,
+      "p95_latency_ms": 7.127747684717178,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B3/seed44/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 22,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 10,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 10,
+        "FP": 22,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 10,
+        "denominator": 32,
+        "value": 0.3125
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 20,
+        "denominator": 42,
+        "value": 0.47619047619047616
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.7355463980463981,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 6.987822212977335,
+      "p95_latency_ms": 7.016284577548504,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": false
+    },
+    "B3/seed44/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 1,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 1,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 6.933211348950863,
+      "p95_latency_ms": 6.933211348950863,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": false
+    },
+    "B4/seed42/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 6,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 1,
+          "unsafe": 5,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 5,
+        "FP": 0,
+        "TN": 6,
+        "FN": 1
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 11,
+        "denominator": 12,
+        "value": 0.9166666666666666
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 10,
+        "denominator": 11,
+        "value": 0.9090909090909091
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 5,
+        "denominator": 6,
+        "value": 0.8333333333333334
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 5,
+        "denominator": 6,
+        "value": 0.8333333333333334
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 1,
+        "denominator": 6,
+        "value": 0.16666666666666666
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 1.0,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 3,
+        "denominator": 4,
+        "value": 0.75
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.25,
+        1.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.396908476948738,
+      "p95_latency_ms": 8.525769691914318,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B4/seed42/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 12,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 12,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 12,
+        "FN": 12
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 12,
+        "denominator": 24,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.8835024928774929,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 8,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 4,
+        "denominator": 8,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.05636494482557,
+      "p95_latency_ms": 7.127214735373855,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B4/seed42/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 22,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 10,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 22,
+        "FN": 10
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 22,
+        "denominator": 32,
+        "value": 0.6875
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.35353513197216924,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.0335668860934675,
+      "p95_latency_ms": 7.078932179138064,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": true
+    },
+    "B4/seed42/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 1,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 1,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.054990157485008,
+      "p95_latency_ms": 7.054990157485008,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B4/seed43/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 6,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 18,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.46464646464646464,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.146252086386085,
+      "p95_latency_ms": 7.393021648749709,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B4/seed43/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 10,
+          "unsafe": 2,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 6,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 2,
+        "TN": 10,
+        "FN": 6
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 16,
+        "denominator": 24,
+        "value": 0.6666666666666666
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 20,
+        "value": 0.6
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "fpr_over_all_safe": {
+        "numerator": 2,
+        "denominator": 12,
+        "value": 0.16666666666666666
+      },
+      "fpr_on_covered": {
+        "numerator": 2,
+        "denominator": 12,
+        "value": 0.16666666666666666
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.876326913826914,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 1,
+        "denominator": 8,
+        "value": 0.125
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.375
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 7,
+        "denominator": 8,
+        "value": 0.875
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 7,
+        "denominator": 8,
+        "value": 0.875
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 7,
+        "denominator": 8,
+        "value": 0.875
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.129827863536775,
+      "p95_latency_ms": 7.216800982132554,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B4/seed43/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 20,
+          "unsafe": 2,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 4,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 2,
+        "TN": 20,
+        "FN": 4
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 26,
+        "denominator": 32,
+        "value": 0.8125
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 18,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 10,
+        "value": 0.6
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 10,
+        "value": 0.6
+      },
+      "fpr_over_all_safe": {
+        "numerator": 2,
+        "denominator": 22,
+        "value": 0.09090909090909091
+      },
+      "fpr_on_covered": {
+        "numerator": 2,
+        "denominator": 22,
+        "value": 0.09090909090909091
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 4,
+        "denominator": 10,
+        "value": 0.4
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.6059623709623709,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 6.983746803598478,
+      "p95_latency_ms": 7.051661051809788,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": true
+    },
+    "B4/seed43/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 1,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 1,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 6.990053690969944,
+      "p95_latency_ms": 6.990053690969944,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B4/seed44/dev": {
+      "n": 12,
+      "origin_count": 4,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 6,
+        "TN": 0,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 18,
+        "value": 0.6666666666666666
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "fpr_on_covered": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.7579365079365079,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 4,
+        "value": 0.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 2,
+        "denominator": 4,
+        "value": 0.5
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.096792027975122,
+      "p95_latency_ms": 7.3573962319642305,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 3755,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B4/seed44/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 9,
+          "unsafe": 3,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 6,
+          "unsafe": 6,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 6,
+        "FP": 3,
+        "TN": 9,
+        "FN": 6
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 15,
+        "denominator": 24,
+        "value": 0.625
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 12,
+        "denominator": 21,
+        "value": 0.5714285714285714
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "fpr_over_all_safe": {
+        "numerator": 3,
+        "denominator": 12,
+        "value": 0.25
+      },
+      "fpr_on_covered": {
+        "numerator": 3,
+        "denominator": 12,
+        "value": 0.25
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 6,
+        "denominator": 12,
+        "value": 0.5
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.7671838779175735,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 2,
+        "denominator": 8,
+        "value": 0.25
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        0.0,
+        0.5
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 5,
+        "denominator": 8,
+        "value": 0.625
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 5,
+        "denominator": 8,
+        "value": 0.625
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 5,
+        "denominator": 8,
+        "value": 0.625
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 7.025572898176809,
+      "p95_latency_ms": 7.130993530154228,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 7771,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B4/seed44/native_evaluation_exploratory": {
+      "n": 32,
+      "origin_count": 32,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 17,
+          "unsafe": 5,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 2,
+          "unsafe": 8,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 8,
+        "FP": 5,
+        "TN": 17,
+        "FN": 2
+      },
+      "coverage": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 25,
+        "denominator": 32,
+        "value": 0.78125
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 16,
+        "denominator": 23,
+        "value": 0.6956521739130435
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "fpr_over_all_safe": {
+        "numerator": 5,
+        "denominator": 22,
+        "value": 0.22727272727272727
+      },
+      "fpr_on_covered": {
+        "numerator": 5,
+        "denominator": 22,
+        "value": 0.22727272727272727
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 2,
+        "denominator": 10,
+        "value": 0.2
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 22,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 0.76335005574136,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 6.925721914740279,
+      "p95_latency_ms": 7.008213875815272,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 16347,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 31,
+      "evidence_head_trained": true
+    },
+    "B4/seed44/native_untruncated_exploratory": {
+      "n": 1,
+      "origin_count": 1,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 1,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 0,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 0,
+        "FP": 0,
+        "TN": 1,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "pr_auc_average_precision_on_covered": null,
+      "pr_auc_score_limitation": "sigmoid risk logits, not calibrated probabilities",
+      "PairAcc": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        null,
+        null
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_base_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 6.98509905487299,
+      "p95_latency_ms": 6.98509905487299,
+      "latency_scope": "single-sample synchronized GPU forward only; excludes tokenization and host dispatch",
+      "input_tokens": 475,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null,
+      "truncated_count": 0,
+      "evidence_head_trained": true
+    },
+    "B0/evaluation_exploratory": {
+      "n": 24,
+      "origin_count": 8,
+      "confusion_matrix": {
+        "safe": {
+          "safe": 12,
+          "unsafe": 0,
+          "abstain": 0
+        },
+        "unsafe": {
+          "safe": 0,
+          "unsafe": 12,
+          "abstain": 0
+        }
+      },
+      "binary_confusion_on_covered": {
+        "TP": 12,
+        "FP": 0,
+        "TN": 12,
+        "FN": 0
+      },
+      "coverage": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "abstain_count": 0,
+      "correct_over_all": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "f1_unsafe_on_covered": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0
+      },
+      "unsafe_recall_over_all": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "unsafe_recall_on_covered": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "fpr_over_all_safe": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "fpr_on_covered": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "false_allow_over_all_unsafe": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "safe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "unsafe_abstain": {
+        "numerator": 0,
+        "denominator": 12,
+        "value": 0.0
+      },
+      "pr_auc_average_precision_on_covered": 1.0,
+      "pr_auc_score_limitation": "hard 0/1 decisions only; this is a two-threshold AP, not a calibrated model ranking curve",
+      "PairAcc": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "PairAcc_group_bootstrap_95CI": [
+        1.0,
+        1.0
+      ],
+      "bootstrap_unit": "origin; 2000 resamples; development descriptive interval only",
+      "invariance_consistency": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_base_accuracy": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_noise_accuracy": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "invariance_joint_accuracy": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "evidence_record_validity_on_parsed": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "evidence_reference_validity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "human_semantic_evidence_correctness": null,
+      "human_semantic_review_count": 0,
+      "teacher_label_disagreement_on_parsed": 0,
+      "mean_latency_ms": 0.054824998793871295,
+      "p95_latency_ms": 0.10848999954760072,
+      "latency_scope": "measured real wall-clock request time including connection setup; budget-skipped items excluded",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "errors": {},
+      "closed_loop_attack_success_rate": null,
+      "clean_task_completion": null,
+      "attacked_task_completion": null
+    }
+  },
+  "seed_aggregates": {
+    "B2": {
+      "PairAcc": {
+        "mean": 0.041666666666666664,
+        "sd": 0.07216878364870322,
+        "values": [
+          0.0,
+          0.0,
+          0.125
+        ]
+      },
+      "F1": {
+        "mean": 0.5714285714285714,
+        "sd": 0.1649572197684645,
+        "values": [
+          0.6666666666666666,
+          0.6666666666666666,
+          0.38095238095238093
+        ]
+      },
+      "native_F1": {
+        "mean": 0.5559715380405036,
+        "sd": 0.08198731809519798,
+        "values": [
+          0.47619047619047616,
+          0.64,
+          0.5517241379310345
+        ]
+      },
+      "invariance": {
+        "mean": 0.9583333333333334,
+        "sd": 0.07216878364870322,
+        "values": [
+          1.0,
+          1.0,
+          0.875
+        ]
+      }
+    },
+    "B3": {
+      "PairAcc": {
+        "mean": 0.125,
+        "sd": 0.125,
+        "values": [
+          0.0,
+          0.25,
+          0.125
+        ]
+      },
+      "F1": {
+        "mean": 0.35714285714285715,
+        "sd": 0.31134992453861954,
+        "values": [
+          0.0,
+          0.5,
+          0.5714285714285714
+        ]
+      },
+      "native_F1": {
+        "mean": 0.35873015873015873,
+        "sd": 0.3167770424658468,
+        "values": [
+          0.0,
+          0.6,
+          0.47619047619047616
+        ]
+      },
+      "invariance": {
+        "mean": 0.9583333333333334,
+        "sd": 0.07216878364870322,
+        "values": [
+          1.0,
+          1.0,
+          0.875
+        ]
+      }
+    },
+    "B4": {
+      "PairAcc": {
+        "mean": 0.125,
+        "sd": 0.125,
+        "values": [
+          0.0,
+          0.125,
+          0.25
+        ]
+      },
+      "F1": {
+        "mean": 0.3904761904761905,
+        "sd": 0.3384639170269878,
+        "values": [
+          0.0,
+          0.6,
+          0.5714285714285714
+        ]
+      },
+      "native_F1": {
+        "mean": 0.4541062801932367,
+        "sd": 0.3935345285877546,
+        "values": [
+          0.0,
+          0.6666666666666666,
+          0.6956521739130435
+        ]
+      },
+      "invariance": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "comparison": {
+    "B4_minus_B2_PairAcc_mean": 0.08333333333333333,
+    "group_bootstrap_95CI": [
+      -0.08333333333333333,
+      0.20833333333333331
+    ],
+    "unit": "resample origins, average three fixed seeds within each origin; development only",
+    "qualification_gate": "NOT_EVALUABLE_NO_INDEPENDENT_GOLD_TEST_OR_NATIVE_HELDOUT_F1",
+    "need_for_complex_method": "NOT_ESTABLISHED_B0_SOLVES_ALL_CONSTRUCTED_PAIRS"
+  },
+  "semantics": "F1/PR-AUC on non-abstain decisions; recall/FPR also use total class denominator; AP is step-integral PR-AUC; no closed-loop endpoint measured"
+}

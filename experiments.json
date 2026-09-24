@@ -1,0 +1,25 @@
+[
+  {
+    "run_id": "2026-09-24-p0-b234",
+    "path": "runs/2026-09-24-p0-b234",
+    "exported_at": "2026-09-24T11:13:17.436656+00:00",
+    "state": {
+      "P0_data_and_rules": "completed_exploratory",
+      "P0_human_review": "pending_120_rows",
+      "P0_LLM": "completed",
+      "B2": "COMPLETED_3_SEEDS_EXPLORATORY",
+      "B3": "COMPLETED_3_SEEDS_EXPLORATORY",
+      "B4": "COMPLETED_3_SEEDS_PARTIAL_SILVER_EVIDENCE",
+      "scientific_gate": "NOT_EVALUABLE_NO_INDEPENDENT_GOLD_TEST_OR_NATIVE_HELDOUT_F1",
+      "method_advantage_demonstrated": false,
+      "closed_loop": "NOT_RUN"
+    },
+    "verification": {
+      "status": "PASS",
+      "prediction_rows": 1828,
+      "sample_index_rows": 1064,
+      "metric_groups_recomputed": 42,
+      "unrun_results_blank": true
+    }
+  }
+]

@@ -1,0 +1,20 @@
+# Local delivery copies, infrastructure notes and credentials are not publication inputs.
+/实验交付_*/
+/服务器资源与教程/
+/本轮实验交付.md
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+.venv/
+__pycache__/
+*.pyc
+*.pt
+*.bin
+*.safetensors
+*.tar.gz
+*.zip
+.cache/
+/local/

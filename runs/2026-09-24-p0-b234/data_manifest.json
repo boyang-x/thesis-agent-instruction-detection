@@ -1,0 +1,155 @@
+{
+  "source_url": "https://github.com/MurrayTom/ToolSafe",
+  "upstream_commit": "46358fa424a927a895c6c8322f99032c4eb5155e",
+  "upstream_local_path": "LOCAL_PATH_REDACTED",
+  "actually_downloaded_and_parsed": true,
+  "files": [
+    {
+      "path": "TS-Bench/agentdojo-traj/banking.json",
+      "count": 87,
+      "classes": {
+        "safe": 59,
+        "unsafe": 28,
+        "controversial": 0
+      },
+      "source_split": "not_explicit_in_path"
+    },
+    {
+      "path": "TS-Bench/agentdojo-traj/slack.json",
+      "count": 101,
+      "classes": {
+        "safe": 82,
+        "unsafe": 19,
+        "controversial": 0
+      },
+      "source_split": "not_explicit_in_path"
+    },
+    {
+      "path": "TS-Bench/agentdojo-traj/travel.json",
+      "count": 177,
+      "classes": {
+        "safe": 157,
+        "unsafe": 20,
+        "controversial": 0
+      },
+      "source_split": "not_explicit_in_path"
+    },
+    {
+      "path": "TS-Bench/agentdojo-traj/workspace.json",
+      "count": 855,
+      "classes": {
+        "safe": 570,
+        "unsafe": 285,
+        "controversial": 0
+      },
+      "source_split": "not_explicit_in_path"
+    },
+    {
+      "path": "TS-Bench/agentharm-traj/benign_steps.json",
+      "count": 206,
+      "classes": {
+        "safe": 206,
+        "unsafe": 0,
+        "controversial": 0
+      },
+      "source_split": "not_explicit_in_path"
+    },
+    {
+      "path": "TS-Bench/agentharm-traj/harmful_steps.json",
+      "count": 525,
+      "classes": {
+        "safe": 0,
+        "unsafe": 210,
+        "controversial": 315
+      },
+      "source_split": "not_explicit_in_path"
+    },
+    {
+      "path": "TS-Bench/asb-traj/test/atttack_failure.json",
+      "count": 429,
+      "classes": {
+        "safe": 429,
+        "unsafe": 0,
+        "controversial": 0
+      },
+      "source_split": "test"
+    },
+    {
+      "path": "TS-Bench/asb-traj/test/DPI_attack_success.json",
+      "count": 2293,
+      "classes": {
+        "safe": 988,
+        "unsafe": 633,
+        "controversial": 672
+      },
+      "source_split": "test"
+    },
+    {
+      "path": "TS-Bench/asb-traj/test/OPI_attack_success.json",
+      "count": 2509,
+      "classes": {
+        "safe": 1279,
+        "unsafe": 436,
+        "controversial": 794
+      },
+      "source_split": "test"
+    }
+  ],
+  "total_rows": 7182,
+  "classes": {
+    "safe": 3770,
+    "unsafe": 1631,
+    "controversial": 1781
+  },
+  "controversial_excluded": 1781,
+  "license": "readme.md MIT badge; no LICENSE file or separate dataset license found in Git tree; redistribution rights not independently established",
+  "official_train_eval_split": "NOT_FOUND in released TS-Bench; no training split invented; asb test folder retained; all local use development audit",
+  "native_adapted": 944,
+  "native_classes": {
+    "safe": 650,
+    "unsafe": 294
+  },
+  "diagnostic_rows": 120,
+  "diagnostic_groups": 40,
+  "diagnostic_classes": {
+    "safe": 60,
+    "unsafe": 60
+  },
+  "reviewed_gold_count": 0,
+  "review_queue_count": 120,
+  "exclusion_reasons": {
+    "outside_first_text_tool_domain_scope_or_unrecoverable_DPI_trust": 4445,
+    "ambiguous_or_unparsed_action": 3,
+    "Expecting value: line 1 column 1 (char 0)": 9,
+    "controversial_excluded_not_abstain": 1781
+  },
+  "train_rows": 0,
+  "heldout_test_rows": 0,
+  "leakage_checks": {
+    "input_fields": [
+      "messages",
+      "candidate",
+      "tool_semantics"
+    ],
+    "gold_labels_passed_to_model": false,
+    "current_observation_included": false,
+    "current_thought_included": false,
+    "post_action_tail": "excluded",
+    "origin_cross_split": 0,
+    "diagnostics_same_candidate_per_triplet": true
+  },
+  "truncation": "none for rules; LLM skips over byte-based conservative 8000-token upper bound, no silent window truncation",
+  "server_pilot": {
+    "config": "training/config.json",
+    "counts": {
+      "native_evaluation_exploratory": 32,
+      "train": 84,
+      "dev": 12,
+      "evaluation_exploratory": 24
+    },
+    "split_status": "family-grouped prospective training partition of already-exposed P0 development data; NOT a new official split or blind test",
+    "independent_gold_count": 0,
+    "agent_reviewed_training_evidence_records": 42,
+    "input_cross_split_duplicates": 0
+  }
+}
