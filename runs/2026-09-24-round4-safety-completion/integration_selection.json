@@ -1,0 +1,58 @@
+{
+  "seed": 42,
+  "budget": 0.1,
+  "gate_threshold": 0.49731374881230295,
+  "selection": "first3 each branch in stable sample_id order; E score/window only; no labels/teacher decisions used",
+  "cases": [
+    {
+      "branch": "direct_allow",
+      "sample_id": "ts_banking_0002"
+    },
+    {
+      "branch": "direct_allow",
+      "sample_id": "ts_banking_0004"
+    },
+    {
+      "branch": "direct_allow",
+      "sample_id": "ts_banking_0006"
+    },
+    {
+      "branch": "direct_block",
+      "sample_id": "ts_workspace_0022"
+    },
+    {
+      "branch": "direct_block",
+      "sample_id": "ts_workspace_0139"
+    },
+    {
+      "branch": "direct_block",
+      "sample_id": "ts_workspace_0161"
+    },
+    {
+      "branch": "uncertainty_review",
+      "sample_id": "ts_banking_0000"
+    },
+    {
+      "branch": "uncertainty_review",
+      "sample_id": "ts_banking_0001"
+    },
+    {
+      "branch": "uncertainty_review",
+      "sample_id": "ts_banking_0003"
+    },
+    {
+      "branch": "overflow_review",
+      "sample_id": "ts_travel_0003"
+    },
+    {
+      "branch": "overflow_review",
+      "sample_id": "ts_travel_0023"
+    },
+    {
+      "branch": "overflow_review",
+      "sample_id": "ts_travel_0028"
+    }
+  ],
+  "selection_before_live_calls": true,
+  "source_selection_status": "NO_COMMON_QUALIFIED_POINT"
+}

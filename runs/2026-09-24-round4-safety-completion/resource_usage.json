@@ -1,0 +1,45 @@
+{
+  "new_requests": 392,
+  "by_phase": {
+    "dev": 316,
+    "relation_short": 64,
+    "integration": 12
+  },
+  "input_tokens": 737960,
+  "output_tokens": 102915,
+  "cache_hit_tokens": 193916,
+  "cache_miss_tokens": 544044,
+  "HTTP_errors": 0,
+  "request_models": [
+    "deepseek-v4-flash"
+  ],
+  "response_models": [
+    "deepseek-flash"
+  ],
+  "system_fingerprints": [
+    "aeb56401ca74e127821c4f9126dcb669"
+  ],
+  "started_at": "2026-09-24T14:05:15.840726+00:00",
+  "completed_at": "2026-09-24T14:17:37.285988+00:00",
+  "latency_seconds_sum": 575.2009214000065,
+  "training_steps": 0,
+  "actual_invoice_CNY": null,
+  "gpu": {
+    "status": "COMPLETED",
+    "unique_samples": 12,
+    "rows": 24,
+    "live_api_calls": 12,
+    "interface_compliant": 24,
+    "detection_correct": 22,
+    "unsafe_allowed": 2,
+    "wall_seconds": 58.55108929999551,
+    "startup_seconds": 2.1033298121765256,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cold_start_wall_seconds": 16.369359299998905,
+    "process_seconds": 42.39595280122012,
+    "actual_forward_count": 9,
+    "peak_gpu_memory_bytes": 1419781120,
+    "worker_exit": 0,
+    "training_steps": 0
+  }
+}

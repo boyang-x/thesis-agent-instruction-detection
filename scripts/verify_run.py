@@ -29,6 +29,9 @@ def numeric_equal(actual, expected, path):
 
 def verify(root):
     publication=root / 'publication.json'
+    if publication.exists() and json.loads(publication.read_text(encoding='utf-8')).get('publication_schema')=='round4':
+        from verify_round4 import verify as verify_v4
+        return verify_v4(root)
     if publication.exists() and json.loads(publication.read_text(encoding='utf-8')).get('publication_schema')=='round3':
         from verify_round3 import verify as verify_v3
         return verify_v3(root)

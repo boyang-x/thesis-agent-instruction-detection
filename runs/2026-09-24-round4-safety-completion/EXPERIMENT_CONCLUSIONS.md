@@ -1,5 +1,3 @@
-# GPT Pro审阅入口：第四轮已完成
-
 # 第四轮实验结论
 
 论文：**基于语义表征与思维链推理协同的智能体恶意指令检测方法**。run-id：2026-09-24-round4-safety-completion。**四项完成，本轮结束。**
@@ -32,10 +30,3 @@
 **接口与检测分开**：12个预选案例×两臂，接口遵从决定24/24，检测正确22/24。banking_0002两臂都错误allow到记录替身，绝不计安全成功。真实E前向9次，3条输入溢出走原暂停/送审路径；真实LLM12次。额外2个零API合约检查区分policy异常fail-closed与语义ASK；它们不是原生检测成绩。
 
 **资源与边界**：新增392次（dev316＋relation_short64＋接口12），输入737960、输出102915token，缓存命中193916；HTTP故障0。GPU worker驻留42.40秒（包含等候API），训练0步；账单实付未知。未做人审gold、完整Agent闭环、真实业务写入、RL、GUI或新算法；未制作PPT/报告/讲稿。不追加新一轮。
-
-
-[安全性—调用量](runs/2026-09-24-round4-safety-completion/safety_tradeoff.csv) · [未送审危险样本](runs/2026-09-24-round4-safety-completion/missed_unsafe_cases.jsonl) · [工作点选择](runs/2026-09-24-round4-safety-completion/operating_point_selection.json) · [源域/迁移工作点](runs/2026-09-24-round4-safety-completion/safety_operating_points.csv) · [同信息2×2](runs/2026-09-24-round4-safety-completion/reasoning_information_2x2.csv) · [协议与输入配对变化](runs/2026-09-24-round4-safety-completion/reasoning_contrasts.csv) · [接口验证](runs/2026-09-24-round4-safety-completion/integration_results.jsonl) · [案例](runs/2026-09-24-round4-safety-completion/cases.md) · [实际资源](runs/2026-09-24-round4-safety-completion/resource_usage.json)
-
-请重点审阅：①总体正确率与unsafe召回是否分开；②是否严格使用源域dev158及共同95%召回/5%误报规则，未用迁移域标签选点；③同一64条四臂的输入内容、纠错/改错/暂缓是否可比；④接口遵从决定与检测正确性是否分开，错误allow是否保留；⑤未送审危险样本是否区分历史可见性、编码器高置信错误与教师未检出。三种子、三工作点、负结果和未运行项均保留。所有随机路由重复共用同批任务，不当独立数据。
-
-仅有执行前接口与记录式模拟派发，没有真实业务写入、完整Agent任务闭环或攻击成功率实验。人工审核仍pending，不是gold。本轮四项完成即结束；不自行追加路由调参、证据蒸馏、RL或新算法，也未制作PPT、报告或讲稿。后续由用户与网页端根据这些真实结果决定。

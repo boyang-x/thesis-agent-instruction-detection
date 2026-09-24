@@ -1,0 +1,20 @@
+[
+  {
+    "fault": "policy_exception",
+    "synthetic_contract_check": true,
+    "provider_calls": 0,
+    "decision": "BLOCK",
+    "reason": "policy_error_fail_closed",
+    "downstream_call_count": 0,
+    "passed": true
+  },
+  {
+    "fault": "semantic_abstain",
+    "synthetic_contract_check": true,
+    "provider_calls": 0,
+    "decision": "ASK",
+    "reason": "injected_test_semantic_unknown",
+    "downstream_call_count": 0,
+    "passed": true
+  }
+]

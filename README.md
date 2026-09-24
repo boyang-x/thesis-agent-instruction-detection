@@ -10,7 +10,13 @@
 - [GPT Pro反馈与采纳记录](reviews/README.md)
 - [每轮结果同步约定](AGENTS.md)
 
-## 第三轮：机制消融与新增领域迁移
+## 第四轮：安全性与接口验证收尾
+
+[实验结论](runs/2026-09-24-round4-safety-completion/EXPERIMENT_CONCLUSIONS.md)：完整源域dev158按固定95%召回/5%误报共同规则筛选，**无共同合格工作点**，未放宽目标。新域主10%直接臂unsafe召回三种子为26/48、41/48、43/48，不能用总体正确比例代表安全性。
+
+固定64条短direct/relation正确56/55，长direct/relation为58/59；短关系臂没有提高unsafe检出数，主动暂缓增加。12条受控接口双臂24个结果全部遵从决定，但检测仅22/24正确，包含同一危险样本在两臂的错误allow。新增392次请求，无训练/新架构；不是完整Agent闭环实验。本轮结束，只交实验结果，未制作PPT/报告/讲稿。
+
+## 第三轮：机制消融与新增领域迁移（历史）
 
 [第三轮结果](runs/2026-09-24-round3-transfer-ablation/RUN_STATUS.md)：旧test96缓存消融、banking/travel共264条的冻结三种子迁移、64条同信息对照均完成。新增592次API；新域主门控直接臂正确236/249/252（N=264），实际调用50/73/69次，均优于仅溢出和对应20次随机送审均值。全量关系臂249/264略高于直接247/264，但主门控关系臂三种子均少于直接臂，不能宣称统一关系收益。
 
@@ -37,6 +43,7 @@ python scripts/verify_run.py runs/2026-09-24-p0-b234
 python scripts/verify_run.py runs/2026-09-24-round2-native-collaboration
 python scripts/verify_run.py runs/2026-09-24-round2-http402-resume
 python scripts/verify_run.py runs/2026-09-24-round3-transfer-ablation
+python scripts/verify_run.py runs/2026-09-24-round4-safety-completion
 ```
 
 仅使用Python标准库，从公开逐样本预测重算指标。第一轮核查42组，第二轮核查77组并验证9组同门控及128组同输入。第三轮核查2224条原始预测、1602行表格及792个路由配置，随机送审按领域匹配实际调用数。原生输入通过上游commit、文件及行号定位；第一轮自建诊断输入随包提供。

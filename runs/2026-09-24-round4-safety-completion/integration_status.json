@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "unique_samples": 12,
+  "rows": 24,
+  "live_api_calls": 12,
+  "interface_compliant": 24,
+  "detection_correct": 22,
+  "unsafe_allowed": 2,
+  "wall_seconds": 58.55108929999551,
+  "startup_seconds": 2.1033298121765256,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cold_start_wall_seconds": 16.369359299998905,
+  "process_seconds": 42.39595280122012,
+  "actual_forward_count": 9,
+  "peak_gpu_memory_bytes": 1419781120,
+  "worker_exit": 0,
+  "training_steps": 0
+}

@@ -1,0 +1,13 @@
+domain,contrast,N,corrected,introduced,correct_to_abstain,wrong_to_abstain,abstain_to_correct
+combined,relation_vs_direct_short,64,0,0,1,3,0
+combined,relation_vs_direct_long,64,2,0,1,0,0
+combined,long_vs_short_direct,64,3,1,0,0,0
+combined,long_vs_short_relation,64,3,0,0,0,1
+banking,relation_vs_direct_short,32,0,0,1,3,0
+banking,relation_vs_direct_long,32,0,0,1,0,0
+banking,long_vs_short_direct,32,1,0,0,0,0
+banking,long_vs_short_relation,32,0,0,0,0,1
+travel,relation_vs_direct_short,32,0,0,0,0,0
+travel,relation_vs_direct_long,32,2,0,0,0,0
+travel,long_vs_short_direct,32,2,1,0,0,0
+travel,long_vs_short_relation,32,3,0,0,0,0
