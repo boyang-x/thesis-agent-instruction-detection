@@ -1,0 +1,12 @@
+{
+  "status": "PATH_ONLY_SERVICE_BLOCKED",
+  "sample_count": 4,
+  "prediction_rows": 8,
+  "wall_seconds": 18.129647900001146,
+  "startup_seconds": 1.7712444383651018,
+  "cold_start_wall_seconds": 16.426892499999667,
+  "process_seconds": 2.3746988102793694,
+  "worker_exit": 0,
+  "new_api_calls": 0,
+  "large_model_successful_route_verified": false
+}

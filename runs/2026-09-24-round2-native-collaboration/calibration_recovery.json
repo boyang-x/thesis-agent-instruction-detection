@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETED",
+  "seconds": 6.496228142641485,
+  "checks": {
+    "E_field_seed42": {
+      "max_gate_difference": 0.0,
+      "thresholds_unchanged": true,
+      "checkpoint_unchanged": true
+    },
+    "E_field_seed43": {
+      "max_gate_difference": 0.0,
+      "thresholds_unchanged": true,
+      "checkpoint_unchanged": true
+    },
+    "E_field_seed44": {
+      "max_gate_difference": 0.0,
+      "thresholds_unchanged": true,
+      "checkpoint_unchanged": true
+    },
+    "E_head_seed42": {
+      "max_gate_difference": 0.0,
+      "thresholds_unchanged": true,
+      "checkpoint_unchanged": true
+    }
+  },
+  "reason": "Original gates used batch32 dev probabilities; per-item exported predictions differ by floating-point rounding. Persist recovered raw dev scores from unchanged checkpoint."
+}

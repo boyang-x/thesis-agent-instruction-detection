@@ -24,6 +24,7 @@ def scrub(text):
     text = re.sub(r"/home/[A-Za-z0-9_.-]+/[^\s\"`<>]+", "REMOTE_PATH_REDACTED", text)
     text = re.sub(r"\b(?:10\.(?:\d{1,3}\.){2}\d{1,3}|192\.168\.\d{1,3}\.\d{1,3})\b", "INTERNAL_IP_REDACTED", text)
     text = re.sub(r"\b[a-zA-Z0-9_.-]*qianxin-inc\.cn\b", "INTERNAL_HOST_REDACTED", text)
+    text = re.sub(r"\bserver-[abc]\b", "EXISTING_COMPUTE_HOST", text)
     return text
 
 
@@ -53,6 +54,9 @@ def safe_copy(source, target):
 
 
 def export(source, run_id):
+    if (source / 'analysis_contract.json').exists():
+        from publish_round2 import export as export_v2
+        return export_v2(source,run_id)
     if not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_.-]+", run_id):
         raise ValueError("invalid run ID")
     for name in FILES + ["data.jsonl", "predictions.jsonl"]:
@@ -150,6 +154,8 @@ def push(run_id):
         behind, ahead = map(int, git("rev-list", "--left-right", "--count", "origin/main...HEAD", capture=True).split())
         if behind: raise RuntimeError("remote changed; integrate deliberately before publication, never force-push")
     paths = [f"runs/{run_id}", "CURRENT_STATUS.md", "GPT_PRO_REVIEW.md", "EXPERIMENTS.md", "experiments.json", "README.md", "AGENTS.md", ".gitignore", "scripts", "reviews/README.md", "Codex_毕设实施与实验任务书.md"]
+    if run_id=='2026-09-24-round2-native-collaboration':
+        paths += ['reviews/2026-09-24-round2-instructions.md','reviews/2026-09-24-round2-adoption.md']
     git("add", "--", *paths)
     git("diff", "--cached", "--check")
     if git("diff", "--cached", "--name-only", capture=True).strip(): git("commit", "-m", "Publish experiment review packet: " + run_id)

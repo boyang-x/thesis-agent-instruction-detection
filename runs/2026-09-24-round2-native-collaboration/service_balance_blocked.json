@@ -1,0 +1,7 @@
+{
+  "error_code": "HTTP_402",
+  "reason": "provider insufficient balance",
+  "first_observed_call": "paired__ts_slack_0049__L_direct",
+  "already_issued_402_calls": 185,
+  "automatic_retries_disabled": true
+}

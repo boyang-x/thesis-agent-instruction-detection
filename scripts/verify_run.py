@@ -28,6 +28,10 @@ def numeric_equal(actual, expected, path):
 
 
 def verify(root):
+    publication=root / 'publication.json'
+    if publication.exists() and json.loads(publication.read_text(encoding='utf-8')).get('publication_schema')=='round2':
+        from verify_round2 import verify as verify_v2
+        return verify_v2(root)
     preds = read_jsonl(root / "predictions.jsonl")
     data = {r["sample_id"]: r for r in read_jsonl(root / "sample_index.jsonl")}
     selection = set(json.loads((root / "selection.json").read_text(encoding="utf-8"))["sample_ids"])

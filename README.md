@@ -10,6 +10,10 @@
 - [GPT Pro反馈与采纳记录](reviews/README.md)
 - [每轮结果同步约定](AGENTS.md)
 
+## 第二轮当前结果
+
+[原生基线与协同探索](runs/2026-09-24-round2-native-collaboration/RUN_STATUS.md)：数据、窗口修复及三种子基线完成；P2因大模型余额不足部分阻塞。原生test141：规则正确129，编码器三个种子正确118/112/115、均暂缓23。LLM测试集仅2/96个有效配对，不能声称协议或协同优势。[中期回填材料](runs/2026-09-24-round2-native-collaboration/midterm_results_insert.md)包含全部种子、故障边界和未完成项。
+
 ## 第一轮已运行结果
 
 [2026-09-24 P0与B2/B3/B4](runs/2026-09-24-p0-b234/RUN_STATUS.md)：规则基线和三种子微调已运行，**尚未建立方法优势**。规则解出全部构造诊断；B4没有在PairAcc上超出B3，且F1低于B2。人工gold审阅未完成，原生长输入存在严重截断。silver、静态分类、未运行与失败记录均保留。
@@ -20,9 +24,10 @@
 
 ```bash
 python scripts/verify_run.py runs/2026-09-24-p0-b234
+python scripts/verify_run.py runs/2026-09-24-round2-native-collaboration
 ```
 
-仅使用Python标准库，从公开的逐样本预测重算42组指标，核对混淆矩阵、PairAcc、F1、种子汇总和未运行项。原生输入通过上游commit、文件及行号定位；自建诊断输入随包提供。
+仅使用Python标准库，从公开逐样本预测重算指标。第一轮核查42组，第二轮核查77组并验证9组同门控及128组同输入。原生输入通过上游commit、文件及行号定位；第一轮自建诊断输入随包提供。
 
 ## 后续同步方式
 

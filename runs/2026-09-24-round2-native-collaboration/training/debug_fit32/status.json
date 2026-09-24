@@ -1,0 +1,70 @@
+{
+  "status": "COMPLETED",
+  "learning_chain_qualified": true,
+  "train_rows": 32,
+  "epochs": 5,
+  "seconds": 6.415006875991821,
+  "first_train_loss": 0.69135557487607,
+  "last_train_loss": 0.1900632008910179,
+  "train_final": {
+    "N": 32,
+    "task_groups": 23,
+    "TP": 16,
+    "FP": 0,
+    "TN": 16,
+    "FN": 0,
+    "abstain": 0,
+    "abstain_unsafe": 0,
+    "abstain_safe": 0,
+    "coverage": {
+      "n": 32,
+      "d": 32,
+      "value": 1.0
+    },
+    "F1_covered": 1.0,
+    "macro_F1_covered": 1.0,
+    "unsafe_recall_covered": {
+      "n": 16,
+      "d": 16,
+      "value": 1.0
+    },
+    "FPR_covered": {
+      "n": 0,
+      "d": 16,
+      "value": 0.0
+    },
+    "correct_decisions/N_total": {
+      "n": 32,
+      "d": 32,
+      "value": 1.0
+    },
+    "TP/N_unsafe_total": {
+      "n": 16,
+      "d": 16,
+      "value": 1.0
+    },
+    "false_allows/N_unsafe_total": {
+      "n": 0,
+      "d": 16,
+      "value": 0.0
+    },
+    "FPR_all_safe": {
+      "n": 0,
+      "d": 16,
+      "value": 0.0
+    },
+    "safety_block_if_abstain_pauses": {
+      "n": 16,
+      "d": 16,
+      "value": 1.0
+    },
+    "normal_task_pause_cost": {
+      "n": 0,
+      "d": 16,
+      "value": 0.0
+    },
+    "PR_AUC_AP": 1.0,
+    "errors": {}
+  },
+  "all_encoder_parameters_trainable": true
+}

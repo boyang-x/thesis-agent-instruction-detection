@@ -1,0 +1,58 @@
+{
+  "run_id": "2026-09-24-round2-native-collaboration",
+  "seed_split": 20260924,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "model_path": "/models",
+  "model_id": "LLMLingua-2 multilingual BERT compression-finetuned backbone",
+  "epochs": 8,
+  "lr": 2e-05,
+  "batch_size": 16,
+  "max_length": 512,
+  "checkpoint_metric": "dev macro-F1 covered, ties earlier epoch",
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "threshold_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "threshold_selection": "dev macro-F1, tie closest 0.5",
+  "gate_budgets": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "max_api_calls": 300,
+  "max_output_tokens": 800,
+  "llm_input_token_estimate_cap": 7500,
+  "max_gpu_seconds": 7200,
+  "P3": "NOT_RUN_PRIORITIZE_MAIN_EXPERIMENT",
+  "learning_check": {
+    "n": 32,
+    "lr": 5e-05,
+    "max_epochs": 60,
+    "stop_train_accuracy": 0.95,
+    "stop_train_loss": 0.2,
+    "max_seconds": 1200
+  }
+}

@@ -1,19 +1,16 @@
 # 当前状态
 
-论文题目：**基于语义表征与思维链推理协同的智能体恶意指令检测方法**
+论文题目：**基于语义表征与思维链推理协同的智能体恶意指令检测方法**。
 
-最新实验：[2026-09-24-p0-b234](runs/2026-09-24-p0-b234/RUN_STATUS.md)。
+最新实验：[2026-09-24-round2-native-collaboration](runs/2026-09-24-round2-native-collaboration/RUN_STATUS.md)。**P0/P1完成，P2因API余额不足部分阻塞；未证明方法优势。**
 
-- P0_data_and_rules: `completed_exploratory`
-- P0_human_review: `pending_120_rows`
-- P0_LLM: `completed`
-- B2: `COMPLETED_3_SEEDS_EXPLORATORY`
-- B3: `COMPLETED_3_SEEDS_EXPLORATORY`
-- B4: `COMPLETED_3_SEEDS_PARTIAL_SILVER_EVIDENCE`
-- scientific_gate: `NOT_EVALUABLE_NO_INDEPENDENT_GOLD_TEST_OR_NATIVE_HELDOUT_F1`
-- method_advantage_demonstrated: `False`
-- closed_loop: `NOT_RUN`
+- 956条、46个任务组；train/dev/test=657/158/141（32/7/7组），均为本地已暴露探索划分。
+- 32条训练拟合通过；TF-IDF与编码器三个种子、head512输入消融均完成。
+- test141：规则正确129；编码器seed42/43/44正确118/112/115，均abstain23。完整指标含dev校准见表。
+- 两种LLM提示有效配对dev31/32、test2/96；无有效完整测试协议/协同结论。真实router仅验证E、门控和余额熔断路径，成功LLM串联未运行。
+- 264/300请求，79成功、185个HTTP402失败；131401输入、18466输出token；单卡GPU墙钟保守计数约9.00分钟（含校准分数恢复及router的SSH开销）。
+- 12个重点案例待人工审核，已审核0；P3/RL/GUI/完整ShieldAgent未运行。第一轮负结果原样保留。
 
-[消融表](runs/2026-09-24-p0-b234/ablation.csv) · [失败案例](runs/2026-09-24-p0-b234/cases.md) · [中期进度](runs/2026-09-24-p0-b234/midterm_summary.md) · [原始预测](runs/2026-09-24-p0-b234/predictions.jsonl)
+[原生基线](runs/2026-09-24-round2-native-collaboration/native_baselines.csv) · [推理/协同故障诊断表](runs/2026-09-24-round2-native-collaboration/reasoning_collaboration.csv) · [案例](runs/2026-09-24-round2-native-collaboration/cases.md) · [中期回填材料](runs/2026-09-24-round2-native-collaboration/midterm_results_insert.md) · [原始及衍生预测](runs/2026-09-24-round2-native-collaboration/predictions.jsonl)
 
-公开数值核查：1828条预测、42组指标通过重算。详细局限以本轮报告为准。
+公开重算验证：17768条记录、77组指标；9组同门控和128组同输入检查通过。记录数包含阈值变体和缓存级联，不是独立样本数或API次数。

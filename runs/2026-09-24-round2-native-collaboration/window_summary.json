@@ -1,0 +1,23 @@
+{
+  "train": {
+    "N": 657,
+    "mandatory_overflow": 104,
+    "head_truncated": 640,
+    "head_current_step_complete": 294,
+    "field_history_incomplete": 369
+  },
+  "dev": {
+    "N": 158,
+    "mandatory_overflow": 27,
+    "head_truncated": 143,
+    "head_current_step_complete": 53,
+    "field_history_incomplete": 112
+  },
+  "test": {
+    "N": 141,
+    "mandatory_overflow": 23,
+    "head_truncated": 132,
+    "head_current_step_complete": 62,
+    "field_history_incomplete": 80
+  }
+}

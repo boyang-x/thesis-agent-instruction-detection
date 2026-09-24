@@ -1,0 +1,122 @@
+{
+  "api": {
+    "calls": 264,
+    "input_tokens": 131401,
+    "output_tokens": 18466,
+    "errors": {
+      "HTTP_402": 185
+    },
+    "retries": 0,
+    "request_latency_sum_seconds": 704.1554797000281
+  },
+  "api_by_phase": {
+    "debug": {
+      "calls": 8,
+      "input_tokens": 4908,
+      "output_tokens": 1711,
+      "errors": {},
+      "retries": 0,
+      "request_latency_sum_seconds": 21.874979799998982
+    },
+    "paired": {
+      "calls": 256,
+      "input_tokens": 126493,
+      "output_tokens": 16755,
+      "errors": {
+        "HTTP_402": 185
+      },
+      "retries": 0,
+      "request_latency_sum_seconds": 682.280499900029
+    }
+  },
+  "attempts_reserved": 264,
+  "unresolved_attempts": 0,
+  "hard_api_cap": 300,
+  "provider_response_models": [
+    "UNKNOWN",
+    "deepseek-flash"
+  ],
+  "gpu": {
+    "device": "NVIDIA GeForce RTX 4090",
+    "devices": 1,
+    "reserved_device_seconds": 539.7137949000012,
+    "reserved_device_seconds_semantics": "conservative wall-time accounting: exact main/failed/calibration container lifetimes plus live router end-to-end wall time (includes SSH overhead)",
+    "main_container_seconds": 493.342493,
+    "failed_import_container_seconds": 10.674156,
+    "calibration_recovery_container_seconds": 17.567498,
+    "main_program_seconds_including_packing": 481.7629051208496,
+    "training_phase_seconds": 394.4418873786926,
+    "live_worker_seconds": 2.3746988102793694,
+    "live_router_wall_seconds_upper_bound": 18.129647900001146,
+    "kernel_active_seconds": null,
+    "limit_seconds": 7200
+  },
+  "runs": {
+    "debug_fit32": {
+      "status": "COMPLETED",
+      "seconds": 6.415006875991821,
+      "epochs": 5,
+      "training_steps": null,
+      "train_rows": 32,
+      "best_epoch": null,
+      "max_memory_allocated": null
+    },
+    "E_field_seed42": {
+      "status": "COMPLETED",
+      "seconds": 99.63569474220276,
+      "epochs": 8,
+      "training_steps": 280,
+      "train_rows": 553,
+      "best_epoch": 5,
+      "max_memory_allocated": 12826532352
+    },
+    "E_field_seed43": {
+      "status": "COMPLETED",
+      "seconds": 97.12249541282654,
+      "epochs": 8,
+      "training_steps": 280,
+      "train_rows": 553,
+      "best_epoch": 5,
+      "max_memory_allocated": 12827410944
+    },
+    "E_field_seed44": {
+      "status": "COMPLETED",
+      "seconds": 97.22995185852051,
+      "epochs": 8,
+      "training_steps": 280,
+      "train_rows": 553,
+      "best_epoch": 5,
+      "max_memory_allocated": 12828105216
+    },
+    "E_head_seed42": {
+      "status": "COMPLETED",
+      "seconds": 94.038738489151,
+      "epochs": 8,
+      "training_steps": 280,
+      "train_rows": 553,
+      "best_epoch": 1,
+      "max_memory_allocated": 12829678080
+    }
+  },
+  "live_router": {
+    "status": "PATH_ONLY_SERVICE_BLOCKED",
+    "sample_count": 4,
+    "prediction_rows": 8,
+    "wall_seconds": 18.129647900001146,
+    "startup_seconds": 1.7712444383651018,
+    "cold_start_wall_seconds": 16.426892499999667,
+    "process_seconds": 2.3746988102793694,
+    "worker_exit": 0,
+    "new_api_calls": 0,
+    "large_model_successful_route_verified": false
+  },
+  "monetary_charge": null,
+  "monetary_charge_note": "provider billing/credits not retrieved; actual requests and usage above, not fabricated currency cost",
+  "cache_cost_note": "All paired calls were actually made. Cached cascade token/latency estimates do not reduce total actual expenditure.",
+  "failure_recovery": [
+    "v1 missing scikit-learn before data packing/training; pinned target dependencies installed once; v2 succeeded",
+    "HTTP402 insufficient balance: original batch lacked global circuit breaker, causing 185 failed request attempts; retained, not counted as LLM reasoning; circuit breaker added before live router"
+  ],
+  "started_at": "2026-09-24T11:47:25.622359+00:00",
+  "completed_at": "2026-09-24T12:00:34.824144+00:00"
+}

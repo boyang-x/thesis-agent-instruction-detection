@@ -1,0 +1,19 @@
+{
+  "publication_schema": "round2",
+  "run_id": "2026-09-24-round2-native-collaboration",
+  "exported_at": "2026-09-24T12:18:34.139651+00:00",
+  "source_repository": "boyang-x/agent-guardrail-research",
+  "source_commit": "f059223210750857e9fb63f42e260ca45b09a779",
+  "source_code_state": "new experiment subdirectory, code snapshots included; existing main entry unchanged",
+  "prediction_numeric_fields_unchanged": true,
+  "raw_native_artifacts_retained_locally": true,
+  "omissions": [
+    "full upstream native text",
+    "native API request/response payloads and free-text explanations",
+    "credentials and infrastructure coordinates",
+    "model weights",
+    "unrelated historical material"
+  ],
+  "native_input_recovery": "upstream commit in data_manifest + source_file/source_row in sample_index",
+  "first_round_preserved": true
+}

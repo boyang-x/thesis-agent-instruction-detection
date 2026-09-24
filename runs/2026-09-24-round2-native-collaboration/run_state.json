@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-09-24-round2-native-collaboration",
+  "parent_run_id": "2026-09-24-p0-b234",
+  "source_git_commit": "f059223210750857e9fb63f42e260ca45b09a779",
+  "P0": "COMPLETED",
+  "P1": "COMPLETED",
+  "P2": "PARTIAL_BLOCKED_INSUFFICIENT_BALANCE",
+  "P3": "NOT_RUN",
+  "learning_chain_qualified": true,
+  "native_rows": 956,
+  "train_dev_test": [
+    657,
+    158,
+    141
+  ],
+  "task_groups": [
+    32,
+    7,
+    7
+  ],
+  "human_reviewed": 0,
+  "human_review_queue": 12,
+  "independent_blind_test": false,
+  "closed_loop_run": false,
+  "method_advantage_demonstrated": false,
+  "status": "PARTIAL_DELIVERED_SERVICE_BLOCKED",
+  "model": "compression-finetuned LLMLingua-2 multilingual BERT backbone",
+  "unchanged_main_py": true,
+  "three_seeds": [
+    42,
+    43,
+    44
+  ],
+  "live_router": "E_AND_GATE_AND_FAIL_CLOSED_PATH_VERIFIED; SUCCESSFUL_LLM_ROUTE_NOT_RUN"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETED",
+  "seed": 44,
+  "view": "field",
+  "best_epoch": 5,
+  "dev_best_macro_F1": 0.9465785824973494,
+  "threshold_dev": 0.5,
+  "gate_thresholds_dev": {
+    "0.1": 0.4994882552418858,
+    "0.25": 0.499650239944458,
+    "0.5": 0.49979880926548503
+  },
+  "initial_head_sum": 0.8698578619937507,
+  "epochs": 8,
+  "train_rows": 553,
+  "training_steps": 280,
+  "seconds": 97.22995185852051,
+  "learning_chain_qualified": true,
+  "max_memory_allocated": 12828105216
+}

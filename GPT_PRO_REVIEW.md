@@ -1,24 +1,19 @@
-# GPT Pro审阅入口
+# GPT Pro 审阅入口
 
-论文题目：**基于语义表征与思维链推理协同的智能体恶意指令检测方法**
+论文题目：**基于语义表征与思维链推理协同的智能体恶意指令检测方法**。
 
-最新实验：`2026-09-24-p0-b234`。请以仓库当前提交为审阅依据，先查看以下材料：
+本轮 `2026-09-24-round2-native-collaboration`。固定上游数据提交 `46358fa424a927a895c6c8322f99032c4eb5155e`；实现原仓库基底 `f059223210750857e9fb63f42e260ca45b09a779`。GitHub本轮固定发布提交见运行目录 PUBLISHED_COMMIT.md 或仓库提交历史（不要把第一轮基准提交当成本轮结果）。
 
-1. [当前状态](CURRENT_STATUS.md)和[运行报告](runs/2026-09-24-p0-b234/RUN_STATUS.md)。
-2. [消融表](runs/2026-09-24-p0-b234/ablation.csv)、[逐种子结果](runs/2026-09-24-p0-b234/results.csv)、[指标](runs/2026-09-24-p0-b234/metrics.json)。
-3. [失败案例](runs/2026-09-24-p0-b234/cases.md)、[原始预测](runs/2026-09-24-p0-b234/predictions.jsonl)及[样本索引](runs/2026-09-24-p0-b234/sample_index.jsonl)。
-4. [数据来源与边界](runs/2026-09-24-p0-b234/data_manifest.json)、[训练配置](runs/2026-09-24-p0-b234/training/config.json)、[算法快照](runs/2026-09-24-p0-b234/code)、[资源](runs/2026-09-24-p0-b234/resource_usage.json)。
+请先读 [当前状态](CURRENT_STATUS.md)、[运行报告](runs/2026-09-24-round2-native-collaboration/RUN_STATUS.md)、[口径审计](runs/2026-09-24-round2-native-collaboration/LABEL_INPUT_AUDIT.md)、[中期回填](runs/2026-09-24-round2-native-collaboration/midterm_results_insert.md)。核查 [原生逐种子表](runs/2026-09-24-round2-native-collaboration/native_baselines.csv)、[协同诊断表](runs/2026-09-24-round2-native-collaboration/reasoning_collaboration.csv)、[预测](runs/2026-09-24-round2-native-collaboration/predictions.jsonl)、[代码](runs/2026-09-24-round2-native-collaboration/code)、[成本](runs/2026-09-24-round2-native-collaboration/resource_usage.json)、[案例](runs/2026-09-24-round2-native-collaboration/cases.md)、[12条审核索引](runs/2026-09-24-round2-native-collaboration/review_queue_12.jsonl)。
 
-## 可直接交给GPT Pro的请求
+关键实情：956条/46任务组；657/158/141行对应32/7/7组。普通编码器32条拟合通过，主线三种子各8epoch，训练实际可用553条。test141的编码器正确数118/112/115，暂缓均23；规则129正确、8暂缓，简单规则在总分母上仍强。不得只引用seed42 covered F1=1。
 
-请检查上述实验的代码、原始预测和证据边界，区分已运行结论与设计。核对同数据/初始化/预算、PairAcc与F1是否一致、abstain和截断是否被隐藏、证据损失是否真正回传，以及负结果是否被完整保留。
+P2未完成：同一模型直接/关系提示共尝试256次；含旧开发debug总请求264，成功79，185次因余额不足失败。批处理当时没有HTTP402全局熔断，已补上并保留全部失败。dev31个有效配对结果相同（29正确、2误报，纠错0/改错0），另1对缺失；test仅2个有效配对。缓存级联的“正确变暂缓”多数是服务故障，不能说成关系推理发现未知。三种子、三预算同门控路由记录存在，但**协议收益留待补足，未证明增益**。在线router只有E/门控/故障关闭路径验证，成功LLM串联缺失。
 
-优先判断当前问题是否仍值得推进：若规则已解决构造样本或B4未超同数据B2/B3，请明确指出，不包装创新或选择最好种子。审查原生数据适配、来源可信度、模板/重复泄漏、silver证据资格及缺少的额外监督对照。
+资源：264/300请求；输入131401、输出18466token；单4090墙钟保守计数约9.00分钟（训练阶段约6.57分钟）。包含冻结检查点的dev校准分数恢复，以及router的SSH开销；没有重训或改门控，校准分数重现阈值差为0。剩余36次额度未消耗；未自行充值或换服务。P3 E_generic/E_relation、RL、GUI、完整ShieldAgent均NOT_RUN，人工审核0/12。
 
-请给出一个最小且可执行的下一轮建议，包括：具体要验证的问题、最少必要的数据/人工审阅、固定条件、强简单对照、评价指标、资源预算、成功与停止标准；如果应暂停，请直接说明。不要改变论文题目，不重写原仓库主入口，暂不安排RL、GUI或完整ShieldAgent复现。
+请检查：1）官方步骤标签与授权关系主张能否对齐；2）任务分组是否仍受跨任务模板和当前thought线索影响；3）mandatory溢出使选择性指标偏高的风险；4）field/head单种子对照支持多强结论；5）如何在服务恢复后，沿用冻结样本/提示补足主实验且保留已有故障；6）是否先用12条重点人工审核修正任务定义，而不是立即扩大证据损失训练。给出一个有限预算、可执行的下一步；不要改论文题目或重写主入口。
 
-当前人类gold审阅尚未完成；B4只是部分代理审核silver证据训练，静态分类不是闭环攻击成功率。此前P0已查看的样本不可改称盲测。
+本轮执行来源与采纳见 [第二轮指令](reviews/2026-09-24-round2-instructions.md) 和 [采纳记录](reviews/2026-09-24-round2-adoption.md)。这些是用户提供并授权执行的材料，不冒称本轮已获GPT Pro认可。第一轮负结果见 runs/2026-09-24-p0-b234/。
 
-反馈回传后放到[reviews](reviews/README.md)，再记录采纳决定；这里尚未获得GPT Pro评审，不能假称其已认可。
-
-仓库链接：https://github.com/boyang-x/thesis-agent-instruction-detection
+仓库：https://github.com/boyang-x/thesis-agent-instruction-detection

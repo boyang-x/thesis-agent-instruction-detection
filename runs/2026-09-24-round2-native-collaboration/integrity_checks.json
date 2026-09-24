@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "rows": 956,
+  "group_disjoint": true,
+  "official_input_fields_only": true,
+  "mandatory_text_exact_when_eligible": true,
+  "LLM_U0_C0_exact": true,
+  "same_LLM_input_object_in_both_arms": true,
+  "mechanical_mismatch_unknown_invalid_ID_checks": "PASS",
+  "does_not_prove": "semantic evidence correctness, independent gold, generalization"
+}

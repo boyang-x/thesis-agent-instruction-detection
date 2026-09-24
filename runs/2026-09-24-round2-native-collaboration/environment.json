@@ -1,0 +1,9 @@
+{
+  "torch": "2.13.0+cu130",
+  "transformers": "5.15.0",
+  "sklearn": "1.7.2",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cuda": "13.0",
+  "model_id": "LLMLingua-2 multilingual BERT compression-finetuned backbone",
+  "gpu_count": 1
+}

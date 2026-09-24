@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "publication_schema": "round2",
+  "prediction_rows": 17768,
+  "sample_index_rows": 956,
+  "metric_groups_recomputed": 77,
+  "same_gate_pairs_verified": 9,
+  "same_LLM_input_pairs_verified": 128,
+  "unrun_results_blank": true,
+  "P2_effect_complete": false
+}
