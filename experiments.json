@@ -72,5 +72,45 @@
       "unrun_results_blank": true,
       "P2_effect_complete": false
     }
+  },
+  {
+    "run_id": "2026-09-24-round2-http402-resume",
+    "path": "runs/2026-09-24-round2-http402-resume",
+    "state": {
+      "run_id": "2026-09-24-round2-http402-resume",
+      "parent_commit": "732834f3f07e508455a108128231a0aba91a5152",
+      "status": "COMPLETED_WITH_TECHNICAL_ABSTENTION_STAGE_CLOSED",
+      "all_402_requests_recovered": true,
+      "all_model_outputs_valid": false,
+      "original_missing_arms": 185,
+      "repaired_arms": 185,
+      "reused_successes": 71,
+      "valid_pairs": {
+        "dev": 32,
+        "test": 95
+      },
+      "P0_P1": "REUSED_FROZEN",
+      "P2": "COMPLETED_WITH_RECORDED_TECHNICAL_ABSTENTION",
+      "P3": "NOT_RUN",
+      "new_method_development": false,
+      "training_performed": false,
+      "human_reviewed": 0,
+      "closed_loop": false,
+      "method_advantage_demonstrated": false,
+      "no_further_algorithm_round": true
+    },
+    "verification": {
+      "status": "PASS",
+      "publication_schema": "round2_resume",
+      "prediction_rows": 17768,
+      "metric_groups_recomputed": 77,
+      "reused_original_successes_verified": 71,
+      "new_402_repairs_verified": 185,
+      "same_gate_pairs_verified": 9,
+      "new_requests": 190,
+      "parent_results_unchanged": true,
+      "new_training": false
+    },
+    "exported_at": "2026-09-24T12:53:41.195315+00:00"
   }
 ]

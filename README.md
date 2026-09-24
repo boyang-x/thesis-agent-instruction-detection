@@ -10,7 +10,11 @@
 - [GPT Pro反馈与采纳记录](reviews/README.md)
 - [每轮结果同步约定](AGENTS.md)
 
-## 第二轮当前结果
+## 第二轮补跑收尾
+
+[冻结HTTP402补跑](runs/2026-09-24-round2-http402-resume/RUN_STATUS.md)：只补185个原失败臂，复用71个成功响应；未重训或改数据/提示/门控。新增190次请求，4个原预选案例的真实串联路径已验证。test两臂均正确93/96，关系臂纠正1个错误、引入1个错误，另有1个输出截断技术暂缓。九组同门控没有总正确数增益，完整种子/预算与成本均保留。[中期回填](runs/2026-09-24-round2-http402-resume/midterm_results_insert.md)。本阶段到此结束，不追加新算法轮次。
+
+## 第二轮首次运行（历史）
 
 [原生基线与协同探索](runs/2026-09-24-round2-native-collaboration/RUN_STATUS.md)：数据、窗口修复及三种子基线完成；P2因大模型余额不足部分阻塞。原生test141：规则正确129，编码器三个种子正确118/112/115、均暂缓23。LLM测试集仅2/96个有效配对，不能声称协议或协同优势。[中期回填材料](runs/2026-09-24-round2-native-collaboration/midterm_results_insert.md)包含全部种子、故障边界和未完成项。
 
@@ -25,6 +29,7 @@
 ```bash
 python scripts/verify_run.py runs/2026-09-24-p0-b234
 python scripts/verify_run.py runs/2026-09-24-round2-native-collaboration
+python scripts/verify_run.py runs/2026-09-24-round2-http402-resume
 ```
 
 仅使用Python标准库，从公开逐样本预测重算指标。第一轮核查42组，第二轮核查77组并验证9组同门控及128组同输入。原生输入通过上游commit、文件及行号定位；第一轮自建诊断输入随包提供。

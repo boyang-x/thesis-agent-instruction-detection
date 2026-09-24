@@ -1,0 +1,12 @@
+{
+  "sample_ids": [
+    "ts_workspace_0188",
+    "ts_workspace_0404",
+    "ts_workspace_0343",
+    "ts_workspace_0651"
+  ],
+  "criterion": "first two routed and first two non-routed in frozen test order; no label selection",
+  "seed": 42,
+  "budget": 0.25,
+  "gate_threshold": 0.4980308711528778
+}

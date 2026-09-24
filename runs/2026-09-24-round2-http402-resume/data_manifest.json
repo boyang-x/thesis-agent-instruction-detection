@@ -1,0 +1,49 @@
+{
+  "run_id": "2026-09-24-round2-native-collaboration",
+  "upstream_commit": "46358fa424a927a895c6c8322f99032c4eb5155e",
+  "raw_rows": 956,
+  "retained_rows": 956,
+  "exact_duplicates_removed": 0,
+  "exclusions": [],
+  "splits": {
+    "train": {
+      "rows": 657,
+      "groups": 32,
+      "classes": {
+        "safe": 450,
+        "unsafe": 207
+      }
+    },
+    "dev": {
+      "rows": 158,
+      "groups": 7,
+      "classes": {
+        "safe": 112,
+        "unsafe": 46
+      }
+    },
+    "test": {
+      "rows": 141,
+      "groups": 7,
+      "classes": {
+        "safe": 90,
+        "unsafe": 51
+      }
+    }
+  },
+  "group_overlap": 0,
+  "normalized_task_overlap": 0,
+  "exact_input_overlap": 0,
+  "test_status": "local_group_holdout_previously_exposed_exploratory_not_official_or_blind",
+  "official_fields": [
+    "instruction",
+    "history",
+    "current_action",
+    "env_info"
+  ],
+  "custom_P1_P2_P3_added": false,
+  "official_current_step_retained": true,
+  "provenance": "upstream fields only; flattened history roles unverified",
+  "human_reviewed": 0,
+  "license": "MIT badge only; no standalone license found; no native redistribution"
+}

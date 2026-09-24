@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "all_four_checkpoint_hashes_match_resume_start": true,
+  "checked_after_live_router": true,
+  "seed42_live_probabilities_match_parent_within_1e-6": true,
+  "owned_live_container_auto_removed": true,
+  "new_training": false
+}

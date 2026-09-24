@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "selection_identical_to_parent": true,
+  "samples": 4,
+  "sample_ids": [
+    "ts_workspace_0188",
+    "ts_workspace_0404",
+    "ts_workspace_0343",
+    "ts_workspace_0651"
+  ],
+  "teacher_requests": 4,
+  "wall_seconds": 29.832825699995738,
+  "startup_seconds": 1.7689099619165063,
+  "cold_start_wall_seconds": 15.564149999998335,
+  "process_seconds": 14.376159619539976,
+  "worker_exit": 0,
+  "retrained": false
+}

@@ -1,0 +1,17 @@
+{
+  "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+  "checked_at": "2026-09-24T12:35:55.558125+00:00",
+  "currency": "CNY",
+  "per_million_peak": {
+    "cache_hit_input": 0.04,
+    "cache_miss_input": 2,
+    "output": 8
+  },
+  "per_million_offpeak": {
+    "cache_hit_input": 0.02,
+    "cache_miss_input": 1,
+    "output": 4
+  },
+  "accounting": "peak-price conservative estimate; not account invoice; unknown-usage transport failures reserve per-request upper estimate",
+  "alias_disclosure": "official current docs route legacy deepseek-v4-flash to DeepSeek-V4.1-Flash; parent observed response name deepseek-flash; immutable weights unavailable"
+}

@@ -1,0 +1,11 @@
+{
+  "recorded_at_resume": true,
+  "parent_public_commit_contains_checkpoint_hashes": false,
+  "limitation": "Parent publishes checkpoint statuses and predictions, not weight hashes. Existing retained weights hashed before resume; no retraining or overwriting; seed42 router probabilities also checked against parent.",
+  "sha256": {
+    "E_field_seed42": "e82a274470187c1568a069837bd69246565d6ac19ca2c2fb5743e9aed40d5079",
+    "E_field_seed43": "7cfacfa107e6968f133ce3bbbbeb01bdfaf991592a190d28fdc0fc7e91b3f31a",
+    "E_field_seed44": "0afa1b713cc6bc61c7a9bb5fa983d49f3535139662a2e9f8020dfdc524128171",
+    "E_head_seed42": "18230d44a2eeaf28e88d6c9e875ca2aedc1c5f7b45f118e46044a3989941c370"
+  }
+}

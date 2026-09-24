@@ -1,0 +1,104 @@
+{
+  "new": {
+    "requests": 190,
+    "successful_HTTP200": 190,
+    "failures": {},
+    "input_tokens": 356927,
+    "output_tokens": 44529,
+    "cache_hit_input_tokens": 47360,
+    "cache_miss_input_tokens": 309567
+  },
+  "new_by_phase": {
+    "probe": {
+      "requests": 1,
+      "successful_HTTP200": 1,
+      "failures": {},
+      "input_tokens": 14,
+      "output_tokens": 1,
+      "cache_hit_input_tokens": 0,
+      "cache_miss_input_tokens": 14
+    },
+    "repair": {
+      "requests": 185,
+      "successful_HTTP200": 185,
+      "failures": {},
+      "input_tokens": 346149,
+      "output_tokens": 43506,
+      "cache_hit_input_tokens": 37376,
+      "cache_miss_input_tokens": 308773
+    },
+    "live": {
+      "requests": 4,
+      "successful_HTTP200": 4,
+      "failures": {},
+      "input_tokens": 10764,
+      "output_tokens": 1022,
+      "cache_hit_input_tokens": 9984,
+      "cache_miss_input_tokens": 780
+    }
+  },
+  "old_including_failures": {
+    "requests": 264,
+    "successful_HTTP200": 79,
+    "failures": {
+      "HTTP_402": 185
+    },
+    "input_tokens": 131401,
+    "output_tokens": 18466,
+    "cache_hit_input_tokens": 15488,
+    "cache_miss_input_tokens": 115913
+  },
+  "combined_actual": {
+    "requests": 454,
+    "successful_HTTP200": 269,
+    "failures": {
+      "HTTP_402": 185
+    },
+    "input_tokens": 488328,
+    "output_tokens": 62995,
+    "cache_hit_input_tokens": 62848,
+    "cache_miss_input_tokens": 425480
+  },
+  "new_estimated_CNY_peak": 0.9772603999999999,
+  "new_estimated_CNY_offpeak": 0.48863019999999996,
+  "billing_amount_CNY": null,
+  "pricing_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+  "cost_note": "published peak/offpeak token-price estimates, not account bill; failed calls without usage reserve upper estimate",
+  "max_new_requests": 200,
+  "max_estimated_CNY": 10,
+  "gpu_training_seconds": 0,
+  "gpu_router_wall_seconds_upper_bound": 29.832825699995738,
+  "live_router": {
+    "status": "COMPLETED",
+    "selection_identical_to_parent": true,
+    "samples": 4,
+    "sample_ids": [
+      "ts_workspace_0188",
+      "ts_workspace_0404",
+      "ts_workspace_0343",
+      "ts_workspace_0651"
+    ],
+    "teacher_requests": 4,
+    "wall_seconds": 29.832825699995738,
+    "startup_seconds": 1.7689099619165063,
+    "cold_start_wall_seconds": 15.564149999998335,
+    "process_seconds": 14.376159619539976,
+    "worker_exit": 0,
+    "retrained": false
+  },
+  "request_models": [
+    "deepseek-v4-flash"
+  ],
+  "response_models": [
+    "deepseek-flash"
+  ],
+  "new_system_fingerprints": [
+    "aeb56401ca74e127821c4f9126dcb669"
+  ],
+  "old_system_fingerprints": [
+    "aeb56401ca74e127821c4f9126dcb669"
+  ],
+  "started_at": "2026-09-24T12:35:55.560376+00:00",
+  "completed_at": "2026-09-24T12:46:31.091881+00:00",
+  "same_alias_does_not_prove_immutable_weights": true
+}

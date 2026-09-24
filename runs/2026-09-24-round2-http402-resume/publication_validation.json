@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "publication_schema": "round2_resume",
+  "prediction_rows": 17768,
+  "metric_groups_recomputed": 77,
+  "reused_original_successes_verified": 71,
+  "new_402_repairs_verified": 185,
+  "same_gate_pairs_verified": 9,
+  "new_requests": 190,
+  "parent_results_unchanged": true,
+  "new_training": false
+}

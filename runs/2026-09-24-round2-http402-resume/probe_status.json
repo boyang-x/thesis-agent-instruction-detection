@@ -1,0 +1,29 @@
+{
+  "attempt_id": "2026-09-24-round2-http402-resume__probe__001",
+  "call_id": "service_probe",
+  "phase": "probe",
+  "parent_attempt_id": null,
+  "started_at": "2026-09-24T12:35:55.560376+00:00",
+  "request_sha256": "305779728552195606e605987cc078a440e761fbff2712cbd6a232300c529853",
+  "input_sha256": "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3",
+  "system_prompt_sha256": "5f2fe107eac9c17ed4a505f400ae812984902f10a7428bb67308e5c8d3d4a705",
+  "request_model": "deepseek-v4-flash",
+  "error_code": null,
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 1,
+    "total_tokens": 15,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 14
+  },
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "latency_ms": 2258.473000001686,
+  "completed_at": "2026-09-24T12:35:57.819435+00:00",
+  "estimated_CNY_peak": 3.6e-05,
+  "cost_reserved_or_estimated_CNY": 3.6e-05
+}

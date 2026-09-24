@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "HTTP402_blocks_next_request": true,
+  "request_cap_200": true,
+  "estimated_cost_cap_10_CNY": true,
+  "all_network_mocked": true,
+  "real_requests_unchanged": 190
+}

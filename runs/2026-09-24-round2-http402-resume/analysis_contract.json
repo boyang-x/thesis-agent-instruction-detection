@@ -1,0 +1,25 @@
+{
+  "frozen_before_native_predictions": true,
+  "primary_cascade_E_threshold": 0.5,
+  "calibrated_E_threshold": "dev macro-F1 only; also report separately",
+  "gate": "abs(p_unsafe - 0.5) <= dev uncertainty quantile; mandatory overflow always routed",
+  "budgets": [
+    0.1,
+    0.25,
+    0.5
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "both_arms_share_exact_route_ids": true,
+  "cascade_subset": "selection.json test ids, fixed before native model predictions",
+  "cache_metrics": "logical cascade only; sum of component latencies is an estimate",
+  "live_router": "seed42 dev25percent gate, first two routed and first two non-routed test IDs in frozen order; no label selection; same E score for both arms",
+  "correction": "baseline binary wrong -> final correct",
+  "introduced_error": "baseline correct -> final binary wrong",
+  "abstain_transitions": "reported separately in 3x3 correctness matrix; never count abstain as correct",
+  "no_test_prompt_tuning": true,
+  "P3": "NOT_RUN"
+}

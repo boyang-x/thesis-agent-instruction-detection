@@ -1,0 +1,11 @@
+{
+  "publication_schema": "round2_resume",
+  "run_id": "2026-09-24-round2-http402-resume",
+  "parent_commit": "732834f3f07e508455a108128231a0aba91a5152",
+  "parent_run": "2026-09-24-round2-native-collaboration",
+  "exported_at": "2026-09-24T12:53:39.313687+00:00",
+  "scope": "HTTP402 repair only; immutable input/model/prompt/gates; no retraining",
+  "native_raw_payloads": "retained locally, not redistributed",
+  "source_commit": "f059223210750857e9fb63f42e260ca45b09a779",
+  "source_code": "new bounded resume subdirectory; existing main entry unchanged"
+}

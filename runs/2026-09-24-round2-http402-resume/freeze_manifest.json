@@ -1,0 +1,38 @@
+{
+  "run_id": "2026-09-24-round2-http402-resume",
+  "frozen_public_commit": "732834f3f07e508455a108128231a0aba91a5152",
+  "parent_run_id": "2026-09-24-round2-native-collaboration",
+  "frozen_at": "2026-09-24T12:35:55.522549+00:00",
+  "sha256": {
+    "config.json": "d163c5c059f743e5f4ae0b2abbbf5227dc2b47ebdf1c35cef4037b264654541a",
+    "selection.json": "70f56f8b05bb5a6f532a9195baf0b40c7552141bf2fbc3dc514be7cab986db61",
+    "sample_index.jsonl": "9e514449ffed27208d2e26761374b230e7504e8f3590a7ff8467084f5a45e898",
+    "packed.jsonl": "50b39c636837425f078ebc8e04f095d3cede26f0a1229d378adf7ed3f4b2cf0b",
+    "prompts_frozen.json": "c6ef0abb9f3f1d8b831bf4adf71734bab69a193db96b23fbbfb917c5335d54cb",
+    "live_selection.json": "cf1328175286548f9687bd0df7ea59d26c09a90fbefd32d7970b957c4fca2462",
+    "analysis_contract.json": "ec9f3592fc2bc614749119c94bf226e7756b36559c1bc571b2a5bd83cf83fd54",
+    "llm_predictions.jsonl": "718130df4e394c55ef0f0a43f68ebeeb69cf93577508b22cb6f44f5491c041ad",
+    "api_calls.jsonl": "2cb1d4a51324c4db403445bc8871302128d3489f604f3b359296abed2132ec2b",
+    "api_attempts.jsonl": "e172336189af281d36594d9613973c86153543b81e019d8d4f5837ff3f1ce54c",
+    "runs/debug_fit32/status.json": "22c3c6fc727a6c33cb9b2b0abd6c04b4b936ec462b6c9888822859d5ebe0fd6c",
+    "runs/E_field_seed42/status.json": "3ee3c503b3428446a1fc0848d66a2e84ec770249fd0f10f40fb69a75fe4a1957",
+    "runs/E_field_seed43/status.json": "02a070df68ee2cb48c848d2e05ff52a29cd8a7fd1b9436c9b1c66adea063470a",
+    "runs/E_field_seed44/status.json": "3097eb7971c2814654ab64b9d95baa46947fdd07a7b23454286ee1398f1b693e",
+    "runs/E_head_seed42/status.json": "8424c7d810826f8bca10a877d53fcca92812ba898fb2342b533861b8a8051e85"
+  },
+  "request_model": "deepseek-v4-flash",
+  "old_response_models": [
+    "deepseek-flash"
+  ],
+  "old_system_fingerprints": [
+    "aeb56401ca74e127821c4f9126dcb669"
+  ],
+  "missing_402_arms": 185,
+  "successful_native_arms_to_reuse": 71,
+  "new_request_cap": 200,
+  "estimated_CNY_cap": 10,
+  "sequential_requests": true,
+  "retrain": false,
+  "new_algorithm": false,
+  "normal_model_abstain_retry": false
+}

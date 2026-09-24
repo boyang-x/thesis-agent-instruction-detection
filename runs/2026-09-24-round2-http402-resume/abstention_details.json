@@ -1,0 +1,591 @@
+{
+  "baseline|R0|None|fixed05||dev": {
+    "abstention_reasons": {
+      "rule_abstain": 20
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R0|None|fixed05||test": {
+    "abstention_reasons": {
+      "rule_abstain": 8
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R0|None|fixed05||train": {
+    "abstention_reasons": {
+      "rule_abstain": 39
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|majority|None|fixed05||dev": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|majority|None|fixed05||test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|majority|None|fixed05||train": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|42|fixed05||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|42|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|42|fixed05||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|42|dev_threshold||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|42|dev_threshold||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|42|dev_threshold||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|43|fixed05||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|43|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|43|fixed05||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|43|dev_threshold||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|43|dev_threshold||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|43|dev_threshold||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|44|fixed05||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|44|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|44|fixed05||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|44|dev_threshold||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|44|dev_threshold||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|R1|44|dev_threshold||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|42|fixed05||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|42|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|42|fixed05||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|42|dev_threshold||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|42|dev_threshold||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|42|dev_threshold||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|43|fixed05||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|43|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|43|fixed05||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|43|dev_threshold||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|43|dev_threshold||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|43|dev_threshold||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|44|fixed05||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|44|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|44|fixed05||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|44|dev_threshold||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|44|dev_threshold||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_field|44|dev_threshold||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_head|42|fixed05||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_head|42|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_head|42|fixed05||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_head|42|dev_threshold||dev": {
+    "abstention_reasons": {
+      "input_overflow": 27
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_head|42|dev_threshold||test": {
+    "abstention_reasons": {
+      "input_overflow": 23
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "baseline|E_head|42|dev_threshold||train": {
+    "abstention_reasons": {
+      "input_overflow": 104
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "paired_reference|R0|None|fixed05||test": {
+    "abstention_reasons": {
+      "rule_abstain": 5
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "cached_cascade|R0_to_L_relation|None|fixed05|abstain_only|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 0,
+    "input_overflow_resolved_correct": 0,
+    "baseline_abstain_to_correct": 4,
+    "baseline_abstain_to_wrong": 0
+  },
+  "paired_reference|E_field|42|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 14
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "cached_cascade|E_to_L_direct|42|fixed05|0.1|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|42|fixed05|0.1|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_direct|42|fixed05|0.25|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|42|fixed05|0.25|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_direct|42|fixed05|0.5|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|42|fixed05|0.5|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "paired_reference|E_field|43|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 14
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "cached_cascade|E_to_L_direct|43|fixed05|0.1|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|43|fixed05|0.1|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_direct|43|fixed05|0.25|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|43|fixed05|0.25|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_direct|43|fixed05|0.5|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|43|fixed05|0.5|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "paired_reference|E_field|44|fixed05||test": {
+    "abstention_reasons": {
+      "input_overflow": 14
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "cached_cascade|E_to_L_direct|44|fixed05|0.1|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|44|fixed05|0.1|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_direct|44|fixed05|0.25|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|44|fixed05|0.25|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_direct|44|fixed05|0.5|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 13,
+    "baseline_abstain_to_correct": 13,
+    "baseline_abstain_to_wrong": 1
+  },
+  "cached_cascade|E_to_L_relation|44|fixed05|0.5|test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 14,
+    "input_overflow_resolved_correct": 12,
+    "baseline_abstain_to_correct": 12,
+    "baseline_abstain_to_wrong": 1
+  },
+  "paired|L_direct||||dev": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "paired|L_relation||||dev": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "paired|L_direct||||test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "paired|L_relation||||test": {
+    "abstention_reasons": {
+      "technical_failure": 1
+    },
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0
+  },
+  "live_router|E_to_L_direct|42|fixed05|0.25|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 2,
+    "input_overflow_resolved_correct": 2,
+    "baseline_abstain_to_correct": 2,
+    "baseline_abstain_to_wrong": 0
+  },
+  "live_router|E_to_L_relation|42|fixed05|0.25|test": {
+    "abstention_reasons": {},
+    "raw_model_abstain": 0,
+    "mechanically_paused_despite_raw_binary": 0,
+    "input_overflow_sent": 2,
+    "input_overflow_resolved_correct": 1,
+    "baseline_abstain_to_correct": 1,
+    "baseline_abstain_to_wrong": 1
+  }
+}

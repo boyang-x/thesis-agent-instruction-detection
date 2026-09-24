@@ -55,6 +55,9 @@ def safe_copy(source, target):
 
 
 def export(source, run_id):
+    if (source / 'freeze_manifest.json').exists() and run_id=='2026-09-24-round2-http402-resume':
+        from publish_resume import export as export_resume
+        return export_resume(source,run_id)
     if (source / 'analysis_contract.json').exists():
         from publish_round2 import export as export_v2
         return export_v2(source,run_id)
